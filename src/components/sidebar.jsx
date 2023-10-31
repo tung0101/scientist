@@ -22,7 +22,7 @@ const Sidebar = () => {
         { title: "Joined", icon: <PiHandshakeFill /> },
         { title: "Inbox", icon: <IoFileTrayOutline /> },
         {
-            title: "YOUR COIN", icon: `${open ? " " : "COIN"}`, spacing: true,
+            title: "YOUR COIN", icon: "", spacing: true,
             submenu: true,
             submenuItems: [
                 { title: "BSC", img: bitcoin },
@@ -37,8 +37,8 @@ const Sidebar = () => {
 
     ];
     return (
-        <div className='flex'>
-            <div className={`${open ? "w-[360px]" : "w-[120px]"} bg-[#2F3338] text-white text-[15px] h-[900px] px-[30px]  duration-300 relative`}>
+        
+            <div className={`${open ? "w-[360px]" : "w-[120px]"} bg-[#2F3338]  text-white text-[15px] h-[900px] px-[30px]  duration-300 relative`}>
                 <div className="inline-flex pt-[30px] items-center ">
                     <img src={logo} className={`rounded  cursor-pointer block float-left duration-500 ${open && "rotate-[360deg]"}`} onClick={() => setOpen(!open)} />
                     <h1 className={`text-white origin-left font-semibold text-2xl pl-4 duration-300 ${!open && "scale-0"} `}>
@@ -85,9 +85,9 @@ const Sidebar = () => {
                     ))}
                 </ul>
             </div>
-            <Navbar />
+            
 
-        </div>
+        
 
     )
 
