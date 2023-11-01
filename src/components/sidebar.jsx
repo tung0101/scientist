@@ -23,7 +23,7 @@ const Sidebar = () => {
         { title: "Joined", icon: <PiHandshakeFill /> },
         { title: "Inbox", icon: <IoFileTrayOutline /> },
         {
-            title: "YOUR COIN", titleAction: "COIN", icon: "", spacing: true,
+            title: <PiCaretDownBold className={`${submenuOpen && "rotate-180 "}`} />, titleAction: "COIN", icon: "", spacing: true,
             submenu: true,
             submenuItems: [
                 { title: "BSC", icon: <Bitcoin /> },
@@ -48,20 +48,20 @@ const Sidebar = () => {
             <ul className="pt-3 text-[#959799] w-full h-full overflow-hidden">
                 {Menus.map((menu, index) => (
                     <div key={index}>
-                        <li className={` text-sm h-[52px] flex items-center gap-x-4 cursor-pointer p-4 hover:bg-gray-600 hover:text-white rounded-md mt-2 ${menu.spacing ? "mt-[44px]" : "mt-2"}`}>
-                            <span className="text-2xl block float-left items-center">
-                                {menu.icon ? menu.icon : <PiHouseFill />}
+                        {menu.titleAction === "COIN" ? <hr className="mt-6 border-gray-500"></hr> : ""}
+                        <li className={`text-sm h-14 flex ${menu.titleAction === 'COIN' ? 'justify-between' : ''} gap-x-4 cursor-pointer p-4 hover:bg-gray-600 hover:text-white rounded-md mt-2 ${menu.spacing ? "mt-7" : "mt-2"}`} onClick={() => {menu.titleAction === "COIN" ? setSubmenuOpen(!submenuOpen) : setSubmenuOpen(false)}}>
+                            <span className="text-2xl">
+                                {menu.icon ? menu.icon : open ? <p className="text-base relative right-2">COIN</p> : <p className="text-base relative right-1">YOUR COIN</p>}
                             </span>
-                            <span className={`text-base font-nornal flex-1 ${open && "hidden"}`} >{menu.title}</span>
-                            {menu.submenu && (
-                                <PiCaretDownBold className={`${submenuOpen && "rotate-180 "}`} onClick={() => setSubmenuOpen(!submenuOpen)} />
-                            )}
+                            <span className={`text-base`} >
+                                {menu.title}
+                            </span>
                         </li>
                         {menu.submenu && submenuOpen && (
                             <ul>
                                 {menu.submenuItems.map((submenuItems, index) => (
-                                    <li key={index} className={`h-6 text-[#959799] flex items-center gap-x-4 cursor-pointer p-5 hover:bg-gray-600 hover:text-white rounded-md mt-4 `}>
-                                        <div className="text-2xl flex left-2">{submenuItems.icon}</div>
+                                    <li key={index} className={`h-6 text-[#959799] flex items-center gap-x-3 cursor-pointer p-5 hover:bg-gray-600 hover:text-white rounded-md mb-4 `}>
+                                        <div className="text-2xl flex relative right-1.5">{submenuItems.icon}</div>
                                         <span className={`flex items-center ${open && "hidden"}`}>
                                             {submenuItems.title}
                                         </span>
@@ -69,6 +69,7 @@ const Sidebar = () => {
                                 ))}
                             </ul>
                         )}
+                        {menu.titleAction === "COIN" ? <hr className="mt-6 border-gray-500"></hr> : ""}
                     </div>
                 ))}
             </ul>
