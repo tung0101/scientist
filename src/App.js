@@ -1,4 +1,5 @@
 import Sidebar from "./components/sidebar";
+<<<<<<< HEAD
 import Navbar from "./components/navbar";
 // import { Routes, Route } from 'react-router-dom'
 
@@ -21,6 +22,12 @@ const App = () => {
             </div>
         </div>
    </div>
+=======
+import BlogDetail from "./pages/BlogDetail";
+const App = () => {
+  return (
+   <BlogDetail/>
+>>>>>>> ThaiVinh
   );
 };
 
