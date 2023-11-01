@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.custom-css {
+    /* Thuộc tính CSS tùy chỉnh ở đây */
+    /* Ví dụ: */
+   
+   height: 900px;
+    /* Thêm bất kỳ thuộc tính CSS nào bạn muốn */
+  }
