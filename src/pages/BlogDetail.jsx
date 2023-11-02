@@ -10,10 +10,10 @@ function BlogDetail() {
               alt="Description"
               className="w-full object-cover h-40 rounded-xl shadow-lg"
             />
-            <div className="ml-2.5 mt-5 mb-3">
+            <div className="mt-5 mb-3">
               <b className=" font-medium text-2xl ">Specialized T Cells Patrol Human Cornea</b><br />
             </div>
-            <div className="ml-2.5 mb-3" >
+            <div className="mb-3" >
               <span className="font-normal text-sm opacity-50 ">
                 Lorem Ipsum is simply dummy text of the printing
                 and typesetting industry. Lorem Ipsum
@@ -24,11 +24,11 @@ function BlogDetail() {
               </span>
             </div>
 
-            <div className="flex ">
+            <div className="flex">
               <img
                 src="https://24hstore.vn/upload_images/images/2023/hinh-nen-may-tinh/1-1-hinh-nen-may-tinh-chill-win-10-1.jpg"
                 alt="Description"
-                className=" w-12 h-12 mt-2.5 mb-3 mx-2.5 rounded-full shadow-lg"
+                className=" w-12 h-12 mt-2.5 mb-3 mr-2.5 rounded-full shadow-lg"
               />
               <div className="mt-2.5">
                 <div className="">
@@ -45,7 +45,7 @@ function BlogDetail() {
 
             </div>
 
-            <div className="ml-2.5 mb-3">
+            <div className="mb-3">
               <span className="opacity-50  font-normal text-sm">
                 Brain development is a carefully choreographed dance. Neurons develop specialized functions and, in small hops, move through the brain to get into the correct position. The chemical signals coursing through the resulting network allow animals to think, feel, and live.
                 In neurodevelopmental disorders (NDD), however, hundreds of mutations in the DNA can interrupt this process. But scientists still do not know how each of these mutations interrupts the neurons precise differentiation or migration patterns. Studying these defects directly in embryos or newborns is too dangerous, and other animal models may deviate from human development.<br />
@@ -53,26 +53,24 @@ function BlogDetail() {
               </span>
             </div>
 
-            <div className="ml-2.5 mb-3">
+            <div className="mb-3">
               <span className="opacity-50  font-normal text-base">
                 See also <a href="/" className="underline font-bold text-text-blue decoration-text-text-blue-900  cursor-pointer">“Sergiu Pasca Builds Brains to Study Developmental Disease”</a>
               </span>
             </div>
-
-            <div className="ml-2.5 mb-3">
+            <div className="mb-3">
               <span className="opacity-50  font-normal text-sm">
                 “We finally have this long list of genes that cause autism,” Pașca said. “The question is, how do we understand their function, especially in the context of how complex human brain development is?”<br />
                 The answer might lie not in the skull but in a dish.<br />
-                For the past ten years, scientists have been able to turn stem cells into <a className="cursor-pointer underline">brain organoids</a> , three-dimensional clumps of cells that grow similar cell types and structures as a human brain.2 Six years ago, Pașcas team took this technology one step further and <a className="cursor-pointer underline">fused two organoids</a> , where each organoid represented a different brain region.3 This new model, called an assembloid, allowed scientists to artificially simulate interactions that occur within the brain.
+                For the past ten years, scientists have been able to turn stem cells into <a href="/" className="cursor-pointer underline">brain organoids</a> , three-dimensional clumps of cells that grow similar cell types and structures as a human brain.2 Six years ago, Pașcas team took this technology one step further and <a href="/" className="cursor-pointer underline">fused two organoids</a> , where each organoid represented a different brain region.3 This new model, called an assembloid, allowed scientists to artificially simulate interactions that occur within the brain.
               </span>
             </div>
-
-            <div className="flex mb-4">
+            <div className="flex gap-1 mb-4">
               <div className="grid-cols-1 ">
                 <img
                   src="https://i.pinimg.com/originals/81/df/3f/81df3f704ba55281ead0042466b293fa.jpg"
                   alt="Description"
-                  className="w-72 h-60 mt-2.5 mb-2 mx-2.5  rounded-xl shadow-lg"
+                  className="w-72 h-60 mt-2.5 mb-2 rounded-xl shadow-lg"
                 />
                 <div className="ml-2.5">
                   <span className="font-normal text-xs opacity-50">
@@ -101,20 +99,20 @@ function BlogDetail() {
 
             </div>
 
-            <div className="ml-2.5 mb-3">
+            <div className="mb-3">
               <span className="font-normal text-base opacity-50">
                 See also “Sergiu Pasca Builds Brains to Study Developmental Disease”
               </span>
             </div>
-            <div className="ml-2.5 mb-3">
+            <div className="mb-3">
               <span className=" font-normal text-sm opacity-50">
-                <a className="underline cursor-pointer">Kristen Brennand</a> , a geneticist at Yale University who was not involved in the study, said that this study offered a more physiologically relevant human brain context compared to previous studies that used neural progenitor cells. However, she emphasized the importance of repeating the study using more samples. “Three different people can inherit the same risk gene, and one will have autism, another schizophrenia, and a third is unaffected,” she noted. “Rare NDD genes dont act in isolation.”
+                <a href="/" className="underline cursor-pointer">Kristen Brennand</a> , a geneticist at Yale University who was not involved in the study, said that this study offered a more physiologically relevant human brain context compared to previous studies that used neural progenitor cells. However, she emphasized the importance of repeating the study using more samples. “Three different people can inherit the same risk gene, and one will have autism, another schizophrenia, and a third is unaffected,” she noted. “Rare NDD genes dont act in isolation.”
                 Pașca recognizes that interneuron migration may only drive a subset of cases of neurodevelopmental disorders, but he believes that finding these key disease processes can inspire new drugs to treat or repair the defects. His team has started dissecting how these genes might affect interneuron function.
                 “My lab is known for developing tools, but that was never really the goal,” Pașca said. “My goal is to really try to understand the biology of severe psychiatric disorders.”
               </span>
             </div>
 
-            <div className=" grid ml-3 mb-3 justify-items-end">
+            <div className="grid mb-3 justify-items-end">
               <div className="flex">
                 <div className="text-center h-8 w-8 mr-2  bg-white rounded-2xl">
                   <i className="fa-brands fa-vimeo mt-2 text-gray-900"></i>
@@ -137,22 +135,22 @@ function BlogDetail() {
               </div>
             </div>
 
-            <div className="ml-2.5 mb-3">
+            <div className="mb-3">
               <h3 className=" font-medium text-sm">Keywords</h3>
             </div>
             <hr className="mb-3 opacity-50"></hr>
-            <div className="mb-3 ml-2.5">
+            <div className="mb-3">
               <span className="font-normal text-sm opacity-50">cell biology, CRISPR, interneurons, neuroscience, organoids</span>
             </div>
-            <div className="mb-3 ml-2.5">
+            <div className="mb-3">
               <h3 className=" font-medium text-sm">View the Project</h3>
             </div>
             <hr className="mb-3 opacity-50"></hr>
             <div className="flex">
               <img
                 src="https://thuthuatnhanh.com/wp-content/uploads/2023/06/hinh-nen-may-tinh-4k-don-gian-ma-dep-chill.jpg"
-                alt="Image Description"
-                className=" w-80  h-24  mt-2.5 mb-3 mx-2.5  rounded-lg shadow-lg"
+                alt="Description"
+                className=" w-80 h-24 mt-2.5 mb-3 mr-2.5  rounded-lg shadow-lg"
               />
               <div className="grid-cols-1 mt-2">
                 <div className="">
@@ -175,11 +173,11 @@ function BlogDetail() {
               <h3 className=" font-medium text-sm">Meet the Author</h3>
             </div>
             <hr className="mb-3 opacity-50"></hr>
-            <div className="flex mb-10" >
+            <div className="flex items-center gap-2 mb-10" >
               <img
                 src="https://24hstore.vn/upload_images/images/2023/hinh-nen-may-tinh/1-1-hinh-nen-may-tinh-chill-win-10-1.jpg"
-                alt="Image Description"
-                className=" w-16  h-16  mt-2.5 mt-4 mx-2.5  rounded-full shadow-lg"
+                alt="Description"
+                className=" w-16 h-16 rounded-full shadow-lg"
               />
               <div className="grid-cols-1 mt-2 ml-1.5">
                 <div className="">
@@ -196,19 +194,11 @@ function BlogDetail() {
                   </span>
                 </div>
               </div>
-
             </div>
           </div>
-
-
         </div>
-
-
-
       </div>
-
       <div className="flex-1 pl-9">
-
         <div className="grid-cols-1 whitespace-nowrap mb-4">
           <p className=" font-medium">Specialized T Cells Patrol Human</p>
           <p className="mb-1  font-medium">Cornea</p>
@@ -263,7 +253,7 @@ function BlogDetail() {
           <div className="flex ">
             <img
               src="https://i.pinimg.com/originals/81/df/3f/81df3f704ba55281ead0042466b293fa.jpg"
-              alt="Image Description"
+              alt="Description"
               className="w-20 h-20 ml-2 my-2 rounded-xl shadow-lg"
             />
             <div className="grid-cols-1 ml-2">
@@ -276,7 +266,7 @@ function BlogDetail() {
           <div className="flex">
             <img
               src="https://i.pinimg.com/originals/81/df/3f/81df3f704ba55281ead0042466b293fa.jpg"
-              alt="Image Description"
+              alt="Description"
               className="w-20 h-20 ml-2 my-2 rounded-xl shadow-lg"
             />
             <div className="grid-cols-1 ml-2">
@@ -289,7 +279,7 @@ function BlogDetail() {
           <div className="flex">
             <img
               src="https://i.pinimg.com/originals/81/df/3f/81df3f704ba55281ead0042466b293fa.jpg"
-              alt="Image Description"
+              alt="Description"
               className="w-20 h-20 ml-2 my-2 rounded-xl shadow-lg"
             />
             <div className="grid-cols-1 ml-2">
@@ -300,8 +290,6 @@ function BlogDetail() {
         </div>
       </div>
     </div>
-
-
   )
 }
 export default BlogDetail
