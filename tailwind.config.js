@@ -6,7 +6,12 @@ module.exports = {
   theme: {
     extend: {
       "dark": "#2F3338",
-      
+      colors: {
+        'my-color': '#2F3338', 
+        'vinh':'#1A1C1E',
+        'text-blue':'#6F49FD',
+        
+      },
     },
    
   },

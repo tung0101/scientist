@@ -1,7 +1,7 @@
 // import './index.css'
 function BlogDetail() {
   return (
-    <div className=" flex ml-32 mt-20 text-white bg-vinh">
+    <div className=" flex ml-48 mt-[-48] text-black bg-vinh">
       <div className="flex-2 mr-10 mt-10 ">
         <div className=" flex ml-20 mb-4 bg-my-color rounded-lg">
           <div className="rounded-lg">
@@ -11,7 +11,7 @@ function BlogDetail() {
                     className=" custo-css object-cover h-40  mt-2.5 mb-3 mx-2.5 rounded-xl shadow-lg"
                   />
                   <div className="ml-2.5 mt-5 mb-3">
-                    <b className=" font-medium text-2xl ">Specialized T Cells Patrol Human Cornea</b><br />
+                    <b className= 'font-medium text-2xl' >Specialized T Cells Patrol Human Cornea</b><br />
                   </div>
                   <div className="ml-2.5 mb-3" >
                     <span className="font-normal text-sm opacity-50 ">
