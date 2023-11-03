@@ -27,7 +27,6 @@ const Progress = () => {
                 </p>
               </div>
             </div>
-
             <h3 className="relative bottom-6 [font-family:'Inter-Medium',Helvetica]">
               Meet the Scientist
             </h3>
