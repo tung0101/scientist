@@ -4,9 +4,10 @@ import Home from "./pages/Home"
 import Navbar from "./components/navbar";
 import ListProject from "./pages/ListProject";
 import DetailProject from "./pages/DetailProject";
+import Scientists from "./pages/Scientists"
 import Joined from "./pages/Joined";
-// import DashboardScientist from "./pages/DashboardScientist";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import DashboardScientist from "./pages/DashboardScientist";
 import './index.css'
 
 
@@ -29,6 +30,7 @@ const App = () => {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/listproject" element={<ListProject />} />
+                <Route path="/scientist" element={<Scientists />} />
                 <Route path="/joined" element={<Joined />} />
                 <Route path="/blogDetail" element={<BlogDetail />} />
                 <Route path="/listproject/detailproject" element={<DetailProject />} />
