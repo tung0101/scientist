@@ -10,7 +10,7 @@ const DetailProject = () => {
             <img
               src={detailproject1}
               alt="detailproject1"
-              className="rounded-[8px]"
+              className="rounded-lg"
             />
             <div className="flex justify-center items-center">
               <div className="flex w-[388px] items-center justify-between p-[16px] relative bg-[#000000b2] rounded-[8px] bottom-20">
