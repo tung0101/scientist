@@ -1,5 +1,6 @@
 @tailwind base;
 @tailwind components;
+<<<<<<< HEAD
 @tailwind utilities;
 .custom-css {
   /* Thuộc tính CSS tùy chỉnh ở đây */
@@ -8,3 +9,6 @@
   height: 900px;
   /* Thêm bất kỳ thuộc tính CSS nào bạn muốn */
 }
+=======
+@tailwind utilities;
+>>>>>>> QuangDu
