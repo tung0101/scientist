@@ -11,9 +11,9 @@ const App = () => {
   return (
     <main>
       {/* <ListProject /> */}
-      <DashboardScientist />
+      {/* <DashboardScientist /> */}
       {/* <DetailProject /> */}
-      {/* <Progress /> */}
+      <Progress />
     </main>
   );
 };
