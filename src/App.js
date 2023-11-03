@@ -1,11 +1,18 @@
 import Sidebar from "./components/sidebar";
-// import BlogDetail from "./pages/BlogDetail";
+import BlogDetail from "./pages/BlogDetail";
 import Home from "./pages/Home"
 import Navbar from "./components/navbar";
-// import { Routes, Route } from 'react-router-dom'
+import ListProject from "./pages/ListProject";
+import DetailProject from "./pages/DetailProject";
+import Joined from "./pages/Joined";
+// import DashboardScientist from "./pages/DashboardScientist";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './index.css'
+
 
 const App = () => {
   return (
+    <Router>
     <div className="flex">
       <div className="relative">
         <div className="sticky top-0">
@@ -19,11 +26,18 @@ const App = () => {
           </div>
           <div className="w-full p-10 min-h-screen bg-black text-white">
             {/* NỘI DUNG*/}
-            <Home />
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/listproject" element={<ListProject />} />
+                  <Route path="/joined" element={<Joined />} />
+                  <Route path="/blogDetail" element={<BlogDetail />} />
+                  <Route path="/listproject/detailproject" element={<DetailProject />} />
+                </Routes>
           </div>
         </div>
       </div>
     </div>
+    </Router>
   );
 };
 

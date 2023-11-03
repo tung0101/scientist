@@ -8,6 +8,7 @@ import {
 } from "react-icons/pi";
 import { IoFileTrayOutline, IoSettingsOutline } from "react-icons/io5";
 import { BsInfoLg, BsCircleHalf } from "react-icons/bs";
+import { NavLink } from 'react-router-dom'
 
 // import Navbar from "./navbar";
 
@@ -22,15 +23,15 @@ const Sidebar = () => {
   const [submenuOpen, setSubmenuOpen] = useState(false);
 
   const Menus = [
-    { title: "Home", icon: <PiHouseFill /> },
-    { title: "Scientist", icon: <PiUsersBold /> },
-    { title: "New Project", icon: <PiAtom /> },
-    { title: "Joined", icon: <PiHandshakeFill /> },
-    { title: "Inbox", icon: <IoFileTrayOutline /> },
+    { title: "Home", icon: <PiHouseFill />, router: '/' },
+    { title: "Scientist", icon: <PiUsersBold />, router: '/scientist' },
+    { title: "New Project", icon: <PiAtom />, router: 'listproject' },
+    { title: "Joined", icon: <PiHandshakeFill />, router: '/joined' },
+    { title: "Inbox", icon: <IoFileTrayOutline />, router: '/inbox' },
     {
       title: <PiCaretDownBold className={`${submenuOpen && "rotate-180 "}`} />,
       titleAction: "COIN",
-      icon: "",
+      router: "/coin",
       spacing: true,
       submenu: true,
       submenuItems: [
@@ -39,29 +40,25 @@ const Sidebar = () => {
         { title: "Add new coin", icon: <Addcoin /> },
       ],
     },
-    { title: "Settings", spacing: true, icon: <IoSettingsOutline /> },
-    { title: "Help & FAQ", icon: <BsInfoLg /> },
-    { title: "Dark mode", icon: <BsCircleHalf /> },
+    { title: "Settings", spacing: true, icon: <IoSettingsOutline />, router: '/setting' },
+    { title: "Help & FAQ", icon: <BsInfoLg />, router: '/help' },
+    { title: "Dark mode", icon: <BsCircleHalf />, router: '/dark' },
   ];
   return (
     <div
-      className={`${
-        open ? "w-28" : "w-64"
-      } bg-primary-500 text-white text-sm max-h-screen px-7 duration-300 overflow-x-scroll scrollbar-none scrollbar-thumb-zinc-600`}
+      className={`${open ? "w-28" : "w-64"
+        } bg-primary-500 text-white text-sm max-h-screen px-7 duration-300 overflow-x-scroll scrollbar-none scrollbar-thumb-zinc-600`}
     >
       <div className="inline-flex pt-7 items-center w-full h-fit bg-primary-500 sticky top-0 ">
         <img
           src={logo}
-          className={`rounded cursor-pointer block float-left duration-500 ${
-            !open && "rotate-180"
-          }`}
+          className={`rounded cursor-pointer block float-left duration-500 ${!open && "rotate-180"}`}
           onClick={() => setOpen(!open)}
           alt=""
         />
         <h1
-          className={`text-white origin-left font-semibold text-2xl pl-4 duration-300 ${
-            open && "scale-0"
-          } `}
+          className={`text-white origin-left font-semibold text-2xl pl-4 duration-300 ${open && "scale-0"
+            } `}
         >
           Auxpo
         </h1>
@@ -74,31 +71,31 @@ const Sidebar = () => {
             ) : (
               ""
             )}
-            <li
-              className={`text-sm h-14 flex ${
-                menu.titleAction === "COIN" ? "justify-between" : ""
-              } gap-x-4 cursor-pointer p-4 hover:bg-gray-600 hover:text-white rounded-md mt-2 ${
-                menu.spacing ? "mt-3" : "mt-2"
-              }`}
-              onClick={() => {
-                menu.titleAction === "COIN"
-                  ? setSubmenuOpen(!submenuOpen)
-                  : setSubmenuOpen(false);
-              }}
-            >
-              <span className="text-2xl">
-                {menu.icon ? (
-                  menu.icon
-                ) : open ? (
-                  <p className="text-base relative right-2">COIN</p>
-                ) : (
-                  <p className="text-base relative right-1">YOUR COIN</p>
-                )}
-              </span>
-              <span className={`text-base`}>{menu.title}</span>
-            </li>
+            <NavLink to={menu.router}>
+              <li
+                className={`text-sm h-14 flex ${menu.titleAction === "COIN" ? "justify-between" : ""
+                  } gap-x-4 cursor-pointer p-4 hover:bg-gray-600 hover:text-white rounded-md mt-2 ${menu.spacing ? "mt-3" : "mt-2"
+                  }`}
+                onClick={() => {
+                  menu.titleAction === "COIN"
+                    ? setSubmenuOpen(!submenuOpen)
+                    : setSubmenuOpen(false);
+                }}
+              >
+                <span className="text-2xl">
+                  {menu.icon ? (
+                    menu.icon
+                  ) : open ? (
+                    <p className="text-base relative right-2">COIN</p>
+                  ) : (
+                    <p className="text-base relative right-1">YOUR COIN</p>
+                  )}
+                </span>
+                <span className={`text-base`}>{menu.title}</span>
+              </li>
+            </NavLink>
             {menu.submenu && submenuOpen && (
-              <ul>
+              <ul className="block">
                 {menu.submenuItems.map((submenuItems, index) => (
                   <li
                     key={index}

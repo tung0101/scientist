@@ -1,24 +1,24 @@
 import React from "react";
 import { filter, navicon2, rectangle } from "../assets";
+import { Link } from 'react-router-dom'
 
 const ListProject = () => {
   return (
-    <div className="text-white bg-black w-[1320px]">
-      <div className="flex justify-between items-center p-4">
-        <div className="flex flex-row justify-start items-center gap-10 text-[24px] [font-family:'Inter-Medium',Helvetica] ml-16">
+    <div className="text-white w-full">
+      <div className="flex justify-between items-center mb-6">
+        <div className="flex flex-row items-center gap-10 text-2xl">
           <h2 className="hover:underline cursor-pointer">All</h2>
           <h2 className="hover:underline cursor-pointer">Upcoming</h2>
           <h2 className="hover:underline cursor-pointer">Opening</h2>
           <h2 className="hover:underline cursor-pointer">Completed</h2>
         </div>
-
-        <div className="flex justify-center items-center bg-[#3F444E] w-[91px] h-[41px] rounded-[12px] gap-2 mr-16 cursor-pointer">
+        <div className="flex justify-center items-center bg-[#3F444E] w-24 h-10 rounded-xl gap-2 cursor-pointer">
           <img src={filter} alt="filter" />
           <button>Filter</button>
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-[30px] pl-20 pr-20">
+      <div className="grid grid-cols-3 gap-7">
         <div className="flex flex-row justify-center items-center">
           <div className="w-[397.33px] h-[400px] bg-[#3F444E] rounded-[12px]">
             <div className="flex justify-center items-center p-[12px]">
@@ -55,9 +55,11 @@ const ListProject = () => {
             </div>
             <div className="flex justify-between items-center p-4 mt-[-35px]">
               <p>0d : 19h : 59m : 25s</p>
-              <div className="flex justify-center items-center bg-[#6f49fd] w-[103px] h-[40px] rounded-[4px] hover:bg-[#6f4f9d] relative bottom-3 cursor-pointer">
-                <button>Detail</button>
-              </div>
+              <Link to="/listproject/detailproject">
+                <div className="flex justify-center items-center bg-[#6f49fd] w-[103px] h-[40px] rounded-[4px] hover:bg-[#6f4f9d] relative bottom-3 cursor-pointer">
+                    <button>Detail</button>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,30 +1,35 @@
+import React from "react";
+import { NavLink } from 'react-router-dom'
+
 function Home() {
   return (
     <>
       <div className="w-full flex text-white gap-5">
         <div>
           <div className="grid grid-cols-3 gap-3">
-            <div className="bg-primary-500 rounded-md p-2 w-full col-span-1">
-              <img
-                src="https://24hstore.vn/upload_images/images/2023/hinh-nen-may-tinh/1-1-hinh-nen-may-tinh-chill-win-10-1.jpg"
-                alt="Description"
-                className="w-full rounded-md shadow-lg"
-              />
-              <div className="mt-2.5">
-                <h2 className="font-medium text-base ">
-                  Specialized T Cells Patrol Human Cornea
-                </h2>
-                <span className="font-normal text-sm opacity-50 leading-normal">
-                  <div className="my-2">USA MERA,PhD.12/31/20225 min read</div>
-                  Lorem Ipsum is simply dummy text of the printing
-                  and typesetting industry. Lorem Ipsum
-                  has been the industry standard dummy text
-                  ever since the 1500s.
-                </span>
-              </div>
+            <div className="bg-primary-500 rounded-md p-2 w-full col-span-1 cursor-pointer">
+              <NavLink to='/blogDetail'>
+                <img
+                  src="https://24hstore.vn/upload_images/images/2023/hinh-nen-may-tinh/1-1-hinh-nen-may-tinh-chill-win-10-1.jpg"
+                  alt="Description"
+                  className="w-full rounded-md shadow-lg"
+                />
+                <div className="mt-2.5">
+                  <h2 className="font-medium text-base ">
+                    Specialized T Cells Patrol Human Cornea
+                  </h2>
+                  <span className="font-normal text-sm opacity-50 leading-normal">
+                    <div className="my-2">USA MERA,PhD.12/31/20225 min read</div>
+                    Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum
+                    has been the industry standard dummy text
+                    ever since the 1500s.
+                  </span>
+                </div>
+              </NavLink>
             </div>
             <div className="grid grid-rows-2 gap-3 justify-between col-span-2">
-              <div className="flex gap-2 bg-primary-500 rounded-xl p-2 row-span-1">
+              <div className="flex gap-2 bg-primary-500 rounded-xl p-2 row-span-1 cursor-pointer">
                 <img
                   src="https://khoinguonsangtao.vn/wp-content/uploads/2022/08/hinh-nen-may-tinh-2-780x439.jpg"
                   alt="Description"
@@ -43,7 +48,7 @@ function Home() {
                   </span>
                 </div>
               </div>
-              <div className="flex gap-2 bg-primary-500 rounded-lg p-2 row-span-1">
+              <div className="flex gap-2 bg-primary-500 rounded-lg p-2 row-span-1 cursor-pointer">
                 <img
                   src="https://axinh.net/wp-content/uploads/2022/05/hinh-nen-may-tinh-chill-900x506.jpg"
                   alt="Description"
