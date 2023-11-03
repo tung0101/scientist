@@ -172,12 +172,12 @@ function Home() {
               </h2>
             </div>
             <div className="row-span-3 flex flex-col gap-4">
-              <div className="h-24 w-64 rounded-2xl bg-primary-500">
+              <div className="h-24 w-64 p-2 rounded-2xl bg-primary-500">
                 <div className="flex ">
                   <img
                     src="https://i.pinimg.com/originals/81/df/3f/81df3f704ba55281ead0042466b293fa.jpg"
                     alt="Description"
-                    className="w-20 h-20 ml-2 my-2 rounded-xl shadow-lg"
+                    className="w-20 h-20 rounded-xl shadow-lg"
                   />
                   <div className="grid-cols-1 ml-2">
                     <span className="text-base cursor-pointer">
@@ -190,12 +190,12 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div className="h-24 w-64 rounded-2xl bg-primary-500">
+              <div className="h-24 w-64 p-2 rounded-2xl bg-primary-500">
                 <div className="flex">
                   <img
                     src="https://i.pinimg.com/originals/81/df/3f/81df3f704ba55281ead0042466b293fa.jpg"
                     alt="Description"
-                    className="w-20 h-20 ml-2 my-2 rounded-xl shadow-lg"
+                    className="w-20 h-20 rounded-xl shadow-lg"
                   />
                   <div className="grid-cols-1 ml-2">
                     <span className="text-base">
@@ -208,12 +208,12 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div className="h-24 w-64 rounded-2xl bg-primary-500">
+              <div className="h-24 w-64 p-2 rounded-2xl bg-primary-500">
                 <div className="flex">
                   <img
                     src="https://i.pinimg.com/originals/81/df/3f/81df3f704ba55281ead0042466b293fa.jpg"
                     alt="Description"
-                    className="w-20 h-20 ml-2 my-2 rounded-xl shadow-lg"
+                    className="w-20 h-20 rounded-xl shadow-lg"
                   />
                   <div className="grid-cols-1 ml-2">
                     <span className="text-base">
