@@ -65,7 +65,6 @@ function Home() {
             </div>
           </div>
         </div>
-
         <div className="flex-1">
           <div className="grid-cols-1 whitespace-nowrap mb-4">
             <p className=" font-medium">Specialized T Cells Patrol Human</p>
