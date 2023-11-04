@@ -1,6 +1,6 @@
 import Sidebar from "./components/sidebar";
 import Navbar from "./components/navbar";
-import List from "./components/list";
+import SignUp from "./components/signup";
 const App = () => {
   return (
    <div className="flex">
@@ -11,7 +11,7 @@ const App = () => {
               <div className="flex flex-col h-screen">
                     <Navbar/>
                     <div className="content flex-grow bg-black text-white">
-                     <List/>
+                    <SignUp/>
                     </div>
               </div>
         </div>
