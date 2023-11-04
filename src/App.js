@@ -13,13 +13,6 @@ import './index.css'
 
 const App = () => {
   return (
-<<<<<<< HEAD
-    <>
-      <Sidebar />
-      <BlogDetail />
-    </>
-  );
-=======
     <Router>
       <div className="flex">
         <div className="relative">
@@ -48,7 +41,6 @@ const App = () => {
       </div>
     </Router>
   )
->>>>>>> dev
 };
 
 export default App;
