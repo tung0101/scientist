@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 .custom-css {
-    /* Thuộc tính CSS tùy chỉnh ở đây */
-    /* Ví dụ: */
-   
-   height: 900px;
-    /* Thêm bất kỳ thuộc tính CSS nào bạn muốn */
-  }
+  /* Thuộc tính CSS tùy chỉnh ở đây */
+  /* Ví dụ: */
+
+  height: 900px;
+  /* Thêm bất kỳ thuộc tính CSS nào bạn muốn */
+}
+
+.active {
+  display: block;
+  border-radius: 12px;
+  background: var(--Hover, #3F444E);
+  width: 100% !important;
+}
