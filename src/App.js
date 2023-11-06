@@ -8,6 +8,7 @@ import DetailProject from "./pages/DetailProject";
 import Scientists from "./pages/Scientists"
 import Joined from "./pages/Joined";
 import Messages from "./pages/Messages";
+import Connect from "./components/Connect";
 import { Route, Routes, useLocation } from 'react-router-dom';
 // import DashboardScientist from "./pages/DashboardScientist";
 import './index.css'
@@ -37,6 +38,7 @@ const App = () => {
               <Route path="/blogDetail" element={<BlogDetail />} />
               <Route path="/listproject/detailproject" element={<DetailProject />} />
               <Route path="/messages" element={<Messages />} />
+              <Route path="/connect" element={<Connect />} />
             </Routes>
           </div>
         </div>
