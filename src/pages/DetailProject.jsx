@@ -5,7 +5,7 @@ const DetailProject = () => {
   const [page, setPage] = useState(true);
 
   return (
-    <div className="text-white bg-black w-full">
+    <div className="text-white w-full">
       <div className="grid grid-cols-3 gap-6">
         <div className="w-full h-full gap-6 col-span-1">
           <div>
