@@ -2,10 +2,14 @@ import { FiSearch } from "react-icons/fi";
 import { GrFormAdd } from "react-icons/gr";
 import { PiChatsCircleDuotone, PiCaretDownBold } from "react-icons/pi";
 import { BiSolidBell } from "react-icons/bi";
+import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+  const location = useLocation();
+  const isMessagesPage = location.pathname.includes('messages');
+  
   return (
-    <div className="py-7 px-10 w-full h-24 bg-primary-500 flex">
+    <div className={`py-7 px-10 w-full h-24 bg-primary-500 flex ${isMessagesPage ? 'hidden' : 'block'}`}>
       <div className="flex items-center justify-between rounded-xl  border-solid border-2 border-slate-400 w-7/12 h-10 px-2 mr-20">
         <FiSearch className="text-white text-lg block float-left cursor-pointed" />
         <input
