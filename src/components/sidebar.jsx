@@ -9,8 +9,7 @@ import {
 import { IoFileTrayOutline, IoSettingsOutline } from "react-icons/io5";
 import { BsInfoLg, BsCircleHalf } from "react-icons/bs";
 import { NavLink } from 'react-router-dom'
-
-// import Navbar from "./navbar";
+import { useLocation } from 'react-router-dom';
 
 import Addcoin from "../assets/Addcoin";
 import Bitcoin from "../assets/Bitcoin";
@@ -21,6 +20,9 @@ import logo from "../assets/logo.svg";
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
   const [submenuOpen, setSubmenuOpen] = useState(false);
+  
+  const location = useLocation();
+  const isMessagesPage = location.pathname.includes('messages');
 
   const Menus = [
     { title: "Home", icon: <PiHouseFill />, router: '/' },
@@ -28,7 +30,7 @@ const Sidebar = () => {
     // { title: "Detail Scientist", icon: <PiUsersBold />, router: '/detailScientist' },
     { title: "New Project", icon: <PiAtom />, router: 'listproject' },
     { title: "Joined", icon: <PiHandshakeFill />, router: '/joined' },
-    { title: "Inbox", icon: <IoFileTrayOutline />, router: '/inbox' },
+    { title: "Inbox", icon: <IoFileTrayOutline />, router: '/messages' },
     {
       title: <PiCaretDownBold className={`${submenuOpen && "rotate-180 "}`} />,
       titleAction: "COIN",
@@ -47,8 +49,7 @@ const Sidebar = () => {
   ];
   return (
     <div
-      className={`${open ? "w-28" : "w-64"
-        } bg-primary-500 text-white text-sm max-h-screen px-7 duration-300 overflow-x-scroll scrollbar-none scrollbar-thumb-zinc-600`}
+      className={`${open ? "w-28" : "w-64"} ${isMessagesPage ? 'hidden' : 'block'} bg-primary-500 text-white text-sm max-h-screen px-7 duration-300 overflow-x-scroll scrollbar-none scrollbar-thumb-zinc-600`}
     >
       <div className="inline-flex pt-7 items-center w-full h-fit bg-primary-500 sticky top-0 ">
         <img
