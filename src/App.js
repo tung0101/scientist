@@ -13,7 +13,6 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import DetailScientist from "./pages/DetailScientist"
 // import DashboardScientist from "./pages/DashboardScientist";
 import './index.css'
-import DetailScientist from "./pages/DetailScientist";
 
 const App = () => {
   const location = useLocation();
