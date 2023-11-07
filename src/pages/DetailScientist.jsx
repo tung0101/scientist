@@ -46,6 +46,7 @@ const DetailScientist = () => {
           <img
             src="https://images.pexels.com/photos/5490803/pexels-photo-5490803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             className="w-[309px] h-[420px] border-[10px] border-[#ccc]"
+            alt=""
           />
         </div>
 
