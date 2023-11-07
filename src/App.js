@@ -9,6 +9,10 @@ import Joined from "./pages/Joined";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import DashboardScientist from "./pages/DashboardScientist";
 import './index.css'
+import DetailScientist from "./pages/DetailScientist";
+import Califomia from "./pages/Califomia";
+import Statistics from "./pages/Statistics";
+import OverDonate from "./pages/OverDonate";
 
 
 const App = () => {
@@ -31,6 +35,10 @@ const App = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/listproject" element={<ListProject />} />
                 <Route path="/scientist" element={<Scientists />} />
+                <Route path="/detailScientist" element={<DetailScientist />} />
+                <Route path="/califomia" element={<Califomia />} />
+                <Route path="/over-donate" element={<OverDonate />} />
+                <Route path="/statistics" element={<Statistics />} />
                 <Route path="/joined" element={<Joined />} />
                 <Route path="/blogDetail" element={<BlogDetail />} />
                 <Route path="/listproject/detailproject" element={<DetailProject />} />
