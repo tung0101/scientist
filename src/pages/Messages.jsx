@@ -45,7 +45,7 @@ export default function Messages() {
                     {textBox.map((item, index) => (
                         <div onClick={() => handleClick(item)} key={index} className={`w-full h-fit cursor-pointer rounded-lg hover:bg-[#252F3C] p-4 mb-2 ${active === item.id ? 'bg-[#252F3C]' : ''}`}>
                             <div className='flex gap-3 items-center'>
-                                <div className='w-14 h-11 rounded-full overflow-hidden'>
+                                <div className='w-14 h-12 rounded-full overflow-hidden'>
                                     <img src='https://antimatter.vn/wp-content/uploads/2022/11/anh-avatar-trang-fb-mac-dinh.jpg' alt='' className='w-full h-full' />
                                 </div>
                                 <div className='w-full'>

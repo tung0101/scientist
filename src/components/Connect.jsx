@@ -1,13 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useLocation } from 'react-router-dom';
 
 const Connect = () => {
-  const [change, setChange] = useState(true)
+  const [change, setChange] = useState(true);
+
+  const location = useLocation();
+  const isDonatePage = location.pathname.includes('donate');
+
+  useEffect(() => {
+    if(isDonatePage) {
+      setChange(false);
+    }
+  }, [isDonatePage])
 
   return (
     <div className="mx-auto w-[560px] h-[698px]  ">
       <div className="flex justify-center">
         <div className="w-[379px] h-[64px] bg-[#2F3338] rounded-full flex gap-10 justify-center items-center">
-          <div className={`w-[164px] h-[56px] ${change ? 'bg-[#3F444E]' : ''} rounded-full flex justify-center items-center cursor-pointer`} onClick={() => {setChange(true)}}>
+          <div className={`w-[164px] h-[56px] ${change ? 'bg-[#3F444E]' : ''}  rounded-full flex justify-center items-center cursor-pointer`} onClick={() => {setChange(true)}}>
             <p className="text-[#FFFFFF]">Swap</p>
           </div>
           <div className={`w-[164px] h-[56px] ${!change ? 'bg-[#3F444E]' : ''} rounded-full flex justify-center items-center cursor-pointer`} onClick={() => {setChange(false)}}>
