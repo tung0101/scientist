@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { detailproject1, detailproject2, navicon1,  progress1, progress2, } from "../assets";
+import { Link } from "react-router-dom";
 
 const DetailProject = () => {
   const [page, setPage] = useState(true);
 
   return (
-    <div className="text-white bg-black w-full">
+    <div className="text-white w-full">
       <div className="grid grid-cols-3 gap-6">
         <div className="w-full h-full gap-6 col-span-1">
           <div>
@@ -159,13 +160,15 @@ const DetailProject = () => {
                 </div>
               </div>
             </div>
+              <Link to="/connect/donate">
             <div className="flex items-end gap-8 relative w-full h-14 cursor-pointer p-3 mt-6">
-              <div className="flex items-center justify-center gap-2 px-6 py-3 relative flex-1 grow bg-cyan-50 shadow-[6px_5px_0px_#5025fb,-6px_-5px_0px_#fb258b] text-black hover:bg-black hover:text-white">
-                <div className="relative w-fit mt-[-1.00px] [font-family:'Orbitron-Bold',Helvetica] font-bold text-base text-center tracking-[0] leading-7 whitespace-nowrap hover:text-white">
-                  Donate now
+                <div className="flex items-center justify-center gap-2 px-6 py-3 relative flex-1 grow bg-cyan-50 shadow-[6px_5px_0px_#5025fb,-6px_-5px_0px_#fb258b] text-black hover:bg-black hover:text-white">
+                  <div className="relative w-fit mt-[-1.00px] [font-family:'Orbitron-Bold',Helvetica] font-bold text-base text-center tracking-[0] leading-7 whitespace-nowrap hover:text-white">
+                    Donate now
+                  </div>
                 </div>
-              </div>
             </div>
+              </Link>
           </div>
         </div>
       </div>

@@ -70,7 +70,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 w-64 border-l-[1px] pl-4 border-zinc-500">
           <div className="grid-cols-1 whitespace-nowrap mb-4">
             <p className=" font-medium">Specialized T Cells Patrol Human</p>
             <p className="mb-1  font-medium">Cornea</p>
@@ -95,7 +95,7 @@ function Home() {
             </span>
             <hr className="decoration-my-color opacity-50 mt-2 w-60"></hr>
           </div>
-          <div className="flex ml-3 mb-11">
+          <div className="flex">
             <div className="text-center h-8 w-8 mr-2  bg-white rounded-2xl">
               <i className="fa-brands fa-vimeo mt-2 text-gray-900"></i>
             </div>
@@ -169,7 +169,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="">
+          <div className="w-64 border-l-[1px] pl-4 border-zinc-500">
             <div className="mb-6 mt-9 row-span-1">
               <h2 className="font-medium text-2xl underline cursor-pointer">
                 Trending
