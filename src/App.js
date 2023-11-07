@@ -12,6 +12,7 @@ import Connect from "./components/Connect";
 import { Route, Routes, useLocation } from 'react-router-dom';
 // import DashboardScientist from "./pages/DashboardScientist";
 import './index.css'
+import DetailScientist from "./pages/DetailScientist";
 
 const App = () => {
   const location = useLocation();
@@ -23,6 +24,7 @@ const App = () => {
         <div className="sticky top-0">
           <Sidebar />
         </div>
+
       </div>
       <div className="grid grid-cols-1 relative w-full">
         <div className="col-span-1">
