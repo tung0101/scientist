@@ -7,6 +7,7 @@ module.exports = {
         primary: {
           // dark: "#2F3338",
           500: "#2F3338",
+
         },
       },
     },
