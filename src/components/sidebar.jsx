@@ -27,6 +27,7 @@ const Sidebar = () => {
   const Menus = [
     { title: "Home", icon: <PiHouseFill />, router: '/' },
     { title: "Scientist", icon: <PiUsersBold />, router: '/scientist' },
+    // { title: "Detail Scientist", icon: <PiUsersBold />, router: '/detailScientist' },
     { title: "New Project", icon: <PiAtom />, router: 'listproject' },
     { title: "Joined", icon: <PiHandshakeFill />, router: '/joined' },
     { title: "Inbox", icon: <IoFileTrayOutline />, router: '/messages' },
