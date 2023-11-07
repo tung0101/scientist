@@ -2,6 +2,7 @@ import React from "react";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faFilter } from '@fortawesome/free-solid-svg-icons'
 import { filter } from "../assets";
+import { Link } from 'react-router-dom'
 
 function Scientists() {
   return (
@@ -41,10 +42,7 @@ function Scientists() {
                     <p className="mt-2 overscroll-contain text-slate-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con
                       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu</p>
                     <a href="/" className="block mt-1 text-lg pb-3 leading-tight pt-5 font-medium text-slate-400 hover:underline">Project participated:<b className="text-white pl-1">79</b> </a>
-
-
                   </div>
-
                 </div>
               </div>
               <div className="grid mt-4">
@@ -54,9 +52,11 @@ function Scientists() {
                       Chat
                     </button>
                   </div>
-                  <button className="bg-[#6F49FD] hover:bg-indigo-600 text-white-700 font-semibold hover:text-white  border border-indigo-600 hover:border-transparent w-32 py-2 px-4 rounded">
-                    View more
-                  </button>
+                  <Link to="/detailscientist">
+                    <button className="bg-[#6F49FD] hover:bg-indigo-600 text-white-700 font-semibold hover:text-white  border border-indigo-600 hover:border-transparent w-32 py-2 px-4 rounded">
+                      View more
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -85,10 +85,7 @@ function Scientists() {
                     <p className="mt-2 overscroll-contain text-slate-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con
                       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu</p>
                     <a href="/" className="block mt-1 text-lg pb-3 leading-tight pt-5 font-medium text-slate-400 hover:underline">Project participated:<b className="text-white pl-1">79</b> </a>
-
-
                   </div>
-
                 </div>
               </div>
               <div className="grid mt-4">
