@@ -9,6 +9,7 @@ import Joined from "./pages/Joined";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import DashboardScientist from "./pages/DashboardScientist";
 import './index.css'
+import DetailScientist from "./pages/DetailScientist";
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/listproject" element={<ListProject />} />
                 <Route path="/scientist" element={<Scientists />} />
+                <Route path="/detailScientist" element={<DetailScientist />} />
                 <Route path="/joined" element={<Joined />} />
                 <Route path="/blogDetail" element={<BlogDetail />} />
                 <Route path="/listproject/detailproject" element={<DetailProject />} />
