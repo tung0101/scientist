@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faImage } from '@fortawesome/free-solid-svg-icons'
-
+import { GrImage } from 'react-icons/gr'
 function SignUp() {
     return (
         <div class=" bg-grey-lighter min-h-screen flex flex-col ">
@@ -9,25 +9,32 @@ function SignUp() {
                 {/* Form Photo - Name, Email*/}
                 <div class="bg-[#2F3338] px-6 py-8 rounded-lg shadow-md text-black w-full">
                     <div class=" flex ">
-                        <div class="flex w-2/5 ">
-
-                                <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
-                                    <div className="">
-
-                                        <div className="p-3 flex text-sm leading-6 text-gray-600">
-
-                                            <p className="">Drag and drop image here, or click add image</p>
-                                        </div>
-                                        <label
-                                            htmlFor="file-upload"
-                                            className="py-2 px-4 relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500"
-                                        >
-                                            <span >Add Image</span>
-                                            <input id="file-upload" name="file-upload" type="file" className="sr-only" />
-                                        </label>
-                                    </div>
+                        <div><p class="text-white pb-1 font-medium w-1">Photo</p></div>
+                        
+                        <div class="flex w-3/5 ">
+                            <div class="flex w-2/3 pt-11 ">
+                                <div class="bg-[#3F444E] rounded w-32 h-32 p-10">
+                                    <div class="bg-white w-12 h-12 rounded-full p-4 "><GrImage /></div>
                                 </div>
-                            
+                            </div>
+                            <div className="flex w-3/5 pt-10 b">
+                                <div className="pt-7">
+
+                                    <div className="p-3 flex text-sm leading-6 text-gray-600">
+
+                                        <p className="">Drag and drop image here, or click add image</p>
+                                    </div>
+                                    <label
+                                        htmlFor="file-upload"
+                                        className="py-2 px-4 relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500"
+                                    >
+                                        <span >Add Image</span>
+                                        <input id="file-upload" name="file-upload" type="file" className="sr-only" />
+                                    </label>
+                                </div>
+
+                            </div>
+
 
                         </div>
                         <div class="w-3/5 ">
@@ -35,7 +42,7 @@ function SignUp() {
                             <p class="text-white pb-1 font-medium">Name</p>
                             <input
                                 type="text"
-                                class="block bg-neutral-800  w-full p-3 rounded-lg mb-4"
+                                class="block bg-[#3F444E] w-full p-3 rounded-lg mb-4"
                                 name="Phone number"
                                 placeholder="tran thanh dat" />
 
@@ -43,7 +50,7 @@ function SignUp() {
                             <p class="text-white pb-1 font-medium">Email</p>
                             <input
                                 type="text"
-                                class="block bg-neutral-800  w-full p-3 rounded-lg mb-4"
+                                class="block bg-[#3F444E]  w-full p-3 rounded-lg mb-4"
                                 name="Phone number"
                                 placeholder="Username@gmail.com" />
 
@@ -53,7 +60,7 @@ function SignUp() {
                     <p class="text-white pb-1 font-medium">Phone number</p>
                     <input
                         type="text"
-                        class="block bg-neutral-800  w-full p-3 rounded-lg mb-4"
+                        class="block bg-[#3F444E]  w-full p-3 rounded-lg mb-4"
                         name="Phone number"
                         placeholder="Username@gmail.com" />
 
@@ -61,7 +68,7 @@ function SignUp() {
                     <p class="text-white pb-1 font-medium">Password</p>
                     <input
                         type="password"
-                        class="block bg-neutral-800  w-full p-3 rounded-lg mb-4"
+                        class="block bg-[#3F444E]  w-full p-3 rounded-lg mb-4"
                         name="Password"
                         placeholder="***************" />
 
@@ -69,7 +76,7 @@ function SignUp() {
                     <p class="text-white pb-1 font-medium">Confirm password </p>
                     <input
                         type="password"
-                        class="block bg-neutral-800  w-full p-3 rounded-lg mb-4"
+                        class="block bg-[#3F444E]  w-full p-3 rounded-lg mb-4"
                         name="Confirm password"
                         placeholder="***************" />
 
@@ -77,7 +84,7 @@ function SignUp() {
                     <p class="text-white pb-1 font-medium">Linked-in</p>
                     <input
                         type="link"
-                        class="block bg-neutral-800  w-full p-3 rounded-lg mb-4"
+                        class="block bg-[#3F444E]  w-full p-3 rounded-lg mb-4"
                         name="Link-in"
                         placeholder="Username@gmail.com" />
 
@@ -85,7 +92,7 @@ function SignUp() {
                     <p class="text-white pb-1 font-medium">Workplace</p>
                     <input
                         type="text"
-                        class="block bg-neutral-800  w-full p-3 rounded-lg mb-4"
+                        class="block bg-[#3F444E]  w-full p-3 rounded-lg mb-4"
                         name="Workplace"
                         placeholder="Username@gmail.com" />
 
@@ -93,7 +100,7 @@ function SignUp() {
                     <p class="text-white pb-1 font-medium">Position</p>
                     <input
                         type="text"
-                        class="block bg-neutral-800  w-full p-3 rounded-lg mb-4"
+                        class="block bg-[#3F444E]  w-full p-3 rounded-lg mb-4"
                         name="Position"
                         placeholder="Username@gmail.com" />
 
