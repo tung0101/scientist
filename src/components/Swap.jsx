@@ -1,19 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 
 const Swap = () => {
+  const [change, setChange] = useState(true)
+
   return (
     <div className="mx-auto w-[560px] h-[698px] ">
       <div className="flex justify-center">
         <div className="w-[379px] h-[64px] bg-[#2F3338] rounded-full flex gap-10 justify-center items-center">
-          <div className="w-[164px] h-[56px] bg-[#3F444E] rounded-full flex justify-center items-center">
+          <div className="w-[164px] h-[56px] bg-[#3F444E] rounded-full flex justify-center items-center cursor-pointer" onClick={setChange(true)}>
             <p className="text-[#FFFFFF]">Swap</p>
           </div>
-          <div className="w-[164px] h-[56px] rounded-full flex justify-center items-center">
+          <div className="w-[164px] h-[56px] rounded-full flex justify-center items-center cursor-pointer" onClick={setChange(false)}>
             <p className="text-[#FFFFFF]">Donate</p>
           </div>
         </div>
       </div>
-      <div>
+      <div className={`${change ? 'block' : 'hidden'}`}>
         <div className="w-[560px] h-[610px] bg-[#2F3338] relative rounded-3xl mt-7 flex justify-center">
           <div className=" text-white w-[480px] h-[518px] my-auto ">
             <div className="w-[480px] h-[50px] gap-20 flex justify-between items-center ">
@@ -29,44 +31,44 @@ const Swap = () => {
                   <path
                     d="M13.875 16.1245L3.75 16.1245"
                     stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M20.25 16.1245L17.625 16.1245"
                     stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M15.75 17.9995C16.7855 17.9995 17.625 17.16 17.625 16.1245C17.625 15.089 16.7855 14.2495 15.75 14.2495C14.7145 14.2495 13.875 15.089 13.875 16.1245C13.875 17.16 14.7145 17.9995 15.75 17.9995Z"
                     stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M7.875 7.87434L3.75 7.87427"
                     stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M20.25 7.87427L11.625 7.87434"
                     stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M9.75 9.74951C10.7855 9.74951 11.625 8.91005 11.625 7.87451C11.625 6.83898 10.7855 5.99951 9.75 5.99951C8.71447 5.99951 7.875 6.83898 7.875 7.87451C7.875 8.91005 8.71447 9.74951 9.75 9.74951Z"
                     stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>
@@ -83,7 +85,7 @@ const Swap = () => {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <g clip-path="url(#clip0_1257_14275)">
+                      <g clipPath="url(#clip0_1257_14275)">
                         <rect
                           y="0.5"
                           width="32"
@@ -142,9 +144,9 @@ const Swap = () => {
                       <path
                         d="M1 1L6 6L11 1"
                         stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   </div>
@@ -168,30 +170,30 @@ const Swap = () => {
                     <path
                       d="M10.4498 6.71997L6.72974 3L3.00977 6.71997"
                       stroke="white"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M6.73047 21V3"
                       stroke="white"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M13.5488 17.28L17.2689 21L20.9888 17.28"
                       stroke="white"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M17.2695 3V21"
                       stroke="white"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </div>
@@ -228,9 +230,9 @@ const Swap = () => {
                       <path
                         d="M1 1L6 6L11 1"
                         stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   </div>
@@ -255,9 +257,9 @@ const Swap = () => {
                   <path
                     d="M12.5 5.5L14 4L12.5 2.5"
                     stroke="#B3B3B3"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M2 8C2 6.93913 2.42143 5.92172 3.17157 5.17157C3.92172 4.42143 4.93913 4 6 4H14"
@@ -266,17 +268,17 @@ const Swap = () => {
                   <path
                     d="M2 8C2 6.93913 2.42143 5.92172 3.17157 5.17157C3.92172 4.42143 4.93913 4 6 4H14"
                     stroke="#B3B3B3"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path d="M3.5 10.5L2 12L3.5 13.5" fill="white" />
                   <path
                     d="M3.5 10.5L2 12L3.5 13.5"
                     stroke="#B3B3B3"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M14 8C14 9.06087 13.5786 10.0783 12.8284 10.8284C12.0783 11.5786 11.0609 12 10 12H2"
@@ -285,9 +287,9 @@ const Swap = () => {
                   <path
                     d="M14 8C14 9.06087 13.5786 10.0783 12.8284 10.8284C12.0783 11.5786 11.0609 12 10 12H2"
                     stroke="#B3B3B3"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>
@@ -301,6 +303,49 @@ const Swap = () => {
           <div className="w-[540px] absolute top-[270px] left-right-2 text-black flex justify-center items-center gap-20">
             <div className="w-[220px] h-[3px] bg-[#202020] rounded-lg"></div>
             <div className="w-[220px] h-[3px] bg-[#202020]  rounded-lg"></div>
+          </div>
+        </div>
+      </div>
+      <div className={`${change ? 'hidden' : 'block'}`}>
+        <div className="w-[777px] h-[640px] bg-[#2F3338] rounded-lg mt-7 flex justify-center my-auto items-center ">
+          <div className=" text-white w-[675px] h-[640px] ">
+            <div className="h-[150px] my-auto flex items-center justify-center">
+              <p className="text-center text-xl">Donate</p>
+            </div>
+            <div className="flex flex-wrap gap-6 ">
+              <div className="w-[675px] h-[60px] rounded-lg bg-[#3F444E] flex  px-4 py-3">
+                <img
+                  className="rounded-lg"
+                  src="https://static2.yan.vn/YanNews/2167221/202102/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg"
+                  alt=""
+                />
+
+                <div className="w-[113px] h-[37px] mx-3">
+                  <p className="text-sm text-white">California Davis</p>
+                  <p className="text-xs text-[#FFFFFF52]">@Julius Caesar</p>
+                </div>
+              </div>
+              <div className="w-[675px] h-[60px] rounded-lg bg-[#3F444E] flex justify-between px-4 py-4">
+                <p>5.00</p>
+                <p>Polygon</p>
+              </div>
+
+              <div className="w-[675px] h-[133px] rounded-lg bg-[#3F444E]">
+                {/* <input
+                  type="text"
+                  placeholder="Your message here.."
+                  className="w-full h-full bg-[#3F444E] rounded-lg placeholder-left placeholder-top px-4"
+                /> */}
+                <textarea
+                  type="text"
+                  placeholder="Your message here.."
+                  className="w-full h-full bg-[#3F444E] rounded-lg placeholder-left placeholder-top px-4 py-4"
+                ></textarea>
+              </div>
+              <div className="w-[675px] h-[56px] rounded-lg bg-[#6F49FD] flex justify-center">
+                <p className="text-white text-lg my-auto">Donate</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
