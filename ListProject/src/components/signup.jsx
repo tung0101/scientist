@@ -5,37 +5,32 @@ function SignUp() {
     return (
         <div class=" bg-grey-lighter min-h-screen flex flex-col ">
             <div class="container max-w-4xl mx-auto flex-1 flex flex-col items-center justify-center px-2 ">
-                <h1 class="text-3xl text-center pb-8">Scientist Sign Up</h1>
+                <h1 class="text-3xl text-center pb-8 pt-6">Scientist Sign Up</h1>
                 {/* Form Photo - Name, Email*/}
-                <div class="bg-[#2F3338] px-6 py-8 rounded-lg shadow-md text-black w-full">
+                <div class="bg-[#2F3338] px-6 py-8 shadow-md text-black w-full">
                     <div class=" flex ">
                         <div><p class="text-white pb-1 font-medium w-1">Photo</p></div>
                         
-                        <div class="flex w-3/5 ">
+                        <div class="flex w-2/5 ">
                             <div class="flex w-2/3 pt-11 ">
-                                <div class="bg-[#3F444E] rounded w-32 h-32 p-10">
+                                <div class="bg-[#3F444E] rounded-xl w-32 h-32 p-10">
                                     <div class="bg-white w-12 h-12 rounded-full p-4 "><GrImage /></div>
                                 </div>
                             </div>
-                            <div className="flex w-3/5 pt-10 b">
-                                <div className="pt-7">
-
-                                    <div className="p-3 flex text-sm leading-6 text-gray-600">
-
-                                        <p className="">Drag and drop image here, or click add image</p>
+                            <div className="flex w-4/5 pt-14 ">
+                                <div className="">
+                                    <div className="pt-5 mb-2 flex text-gray-600">
+                                        <p className=" text-[#858D9D]">Drag and drop image here, or click add image</p>
                                     </div>
                                     <label
                                         htmlFor="file-upload"
-                                        className="py-2 px-4 relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500"
-                                    >
+                                        className="py-2 px-3 relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500"
+                                 >
                                         <span >Add Image</span>
                                         <input id="file-upload" name="file-upload" type="file" className="sr-only" />
                                     </label>
                                 </div>
-
                             </div>
-
-
                         </div>
                         <div class="w-3/5 ">
                             {/* Name */}
