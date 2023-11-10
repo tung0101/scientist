@@ -23,7 +23,6 @@ function BlogDetail() {
                                 and typesetting industry. Lorem Ipsum
                             </span>
                         </div>
-
                         <div className="flex">
                             <img
                                 src="https://24hstore.vn/upload_images/images/2023/hinh-nen-may-tinh/1-1-hinh-nen-may-tinh-chill-win-10-1.jpg"
@@ -42,9 +41,7 @@ function BlogDetail() {
                                     </span>
                                 </div>
                             </div>
-
                         </div>
-
                         <div className="mb-3">
                             <span className="opacity-50  font-normal text-sm">
                                 Brain development is a carefully choreographed dance. Neurons develop specialized functions and, in small hops, move through the brain to get into the correct position. The chemical signals coursing through the resulting network allow animals to think, feel, and live.
@@ -52,7 +49,6 @@ function BlogDetail() {
                                 In a new <a href="/" className="underline font-bold text-text-blue decoration-text-text-blue-900 cursor-pointer">study</a>. published in Nature, <a href="/" className="underline font-bold text-text-blue decoration-text-text-blue-900  cursor-pointer">Sergiu Pașca,</a> a neuroscientist at Stanford University, and his team combined assembloid technology with CRISPR gene editing to determine the role of neurodevelopmental disease genes during typical brain development and the mayhem that ensues when they are missing.1
                             </span>
                         </div>
-
                         <div className="mb-3">
                             <span className="opacity-50  font-normal text-base">
                                 See also <a href="/" className="underline font-bold text-text-blue decoration-text-text-blue-900  cursor-pointer">“Sergiu Pasca Builds Brains to Study Developmental Disease”</a>
@@ -96,9 +92,7 @@ function BlogDetail() {
                                     </span>
                                 </div>
                             </div>
-
                         </div>
-
                         <div className="mb-3">
                             <span className="font-normal text-base opacity-50">
                                 See also “Sergiu Pasca Builds Brains to Study Developmental Disease”
@@ -111,7 +105,6 @@ function BlogDetail() {
                                 “My lab is known for developing tools, but that was never really the goal,” Pașca said. “My goal is to really try to understand the biology of severe psychiatric disorders.”
                             </span>
                         </div>
-
                         <div className="grid mb-3 justify-items-end">
                             <div className="flex">
                                 <div className="text-center h-8 w-8 mr-2  bg-white rounded-2xl">
@@ -134,7 +127,6 @@ function BlogDetail() {
                                 </div>
                             </div>
                         </div>
-
                         <div className="mb-3">
                             <h3 className=" font-medium text-sm">Keywords</h3>
                         </div>
