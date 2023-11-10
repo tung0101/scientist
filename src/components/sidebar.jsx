@@ -8,8 +8,8 @@ import {
 } from "react-icons/pi";
 import { IoFileTrayOutline, IoSettingsOutline } from "react-icons/io5";
 import { BsInfoLg, BsCircleHalf } from "react-icons/bs";
-import { NavLink } from 'react-router-dom'
-import { useLocation } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import Addcoin from "../assets/Addcoin";
 import Bitcoin from "../assets/Bitcoin";
@@ -20,17 +20,17 @@ import logo from "../assets/logo.svg";
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
   const [submenuOpen, setSubmenuOpen] = useState(false);
-  
+
   const location = useLocation();
-  const isMessagesPage = location.pathname.includes('messages');
+  const isMessagesPage = location.pathname.includes("messages");
 
   const Menus = [
-    { title: "Home", icon: <PiHouseFill />, router: '/' },
-    { title: "Scientist", icon: <PiUsersBold />, router: '/scientist' },
+    { title: "Home", icon: <PiHouseFill />, router: "/" },
+    { title: "Scientist", icon: <PiUsersBold />, router: "/scientist" },
     // { title: "Detail Scientist", icon: <PiUsersBold />, router: '/detailScientist' },
-    { title: "New Project", icon: <PiAtom />, router: 'listproject' },
-    { title: "Joined", icon: <PiHandshakeFill />, router: '/joined' },
-    { title: "Inbox", icon: <IoFileTrayOutline />, router: '/messages' },
+    { title: "New Project", icon: <PiAtom />, router: "listproject" },
+    { title: "Joined", icon: <PiHandshakeFill />, router: "/joined" },
+    { title: "Inbox", icon: <IoFileTrayOutline />, router: "/messages" },
     {
       title: <PiCaretDownBold className={`${submenuOpen && "rotate-180 "}`} />,
       titleAction: "COIN",
@@ -43,24 +43,34 @@ const Sidebar = () => {
         { title: "Add new coin", icon: <Addcoin /> },
       ],
     },
-    { title: "Settings", spacing: true, icon: <IoSettingsOutline />, router: '/setting' },
-    { title: "Help & FAQ", icon: <BsInfoLg />, router: '/help' },
-    { title: "Dark mode", icon: <BsCircleHalf />, router: '/dark' },
+    {
+      title: "Settings",
+      spacing: true,
+      icon: <IoSettingsOutline />,
+      router: "/setting",
+    },
+    { title: "Help & FAQ", icon: <BsInfoLg />, router: "/help" },
+    { title: "Dark mode", icon: <BsCircleHalf />, router: "/dark" },
   ];
   return (
     <div
-      className={`${open ? "w-28" : "w-64"} ${isMessagesPage ? 'hidden' : 'block'} bg-primary-500 text-white text-sm max-h-screen px-7 duration-300 overflow-x-scroll scrollbar-none scrollbar-thumb-zinc-600`}
+      className={`${open ? "w-28" : "w-64"} ${
+        isMessagesPage ? "hidden" : "block"
+      } bg-primary-500 text-white text-sm min-h-screen px-7 duration-300 overflow-x-scroll scrollbar-none scrollbar-thumb-zinc-600`}
     >
       <div className="inline-flex pt-7 items-center w-full h-fit bg-primary-500 sticky top-0 ">
         <img
           src={logo}
-          className={`rounded cursor-pointer block float-left duration-500 ${!open && "rotate-180"}`}
+          className={`rounded cursor-pointer block float-left duration-500 ${
+            !open && "rotate-180"
+          }`}
           onClick={() => setOpen(!open)}
           alt=""
         />
         <h1
-          className={`text-white origin-left font-semibold text-2xl pl-4 duration-300 ${open && "scale-0"
-            } `}
+          className={`text-white origin-left font-semibold text-2xl pl-4 duration-300 ${
+            open && "scale-0"
+          } `}
         >
           Auxpo
         </h1>
@@ -75,9 +85,11 @@ const Sidebar = () => {
             )}
             <NavLink to={menu.router}>
               <li
-                className={`text-sm h-14 flex ${menu.titleAction === "COIN" ? "justify-between" : ""
-                  } gap-x-4 cursor-pointer p-4 hover:bg-gray-600 hover:text-white rounded-md mt-2 ${menu.spacing ? "mt-3" : "mt-2"
-                  }`}
+                className={`text-sm h-14 flex ${
+                  menu.titleAction === "COIN" ? "justify-between" : ""
+                } gap-x-4 cursor-pointer p-4 hover:bg-gray-600 hover:text-white rounded-md mt-2 ${
+                  menu.spacing ? "mt-3" : "mt-2"
+                }`}
                 onClick={() => {
                   menu.titleAction === "COIN"
                     ? setSubmenuOpen(!submenuOpen)
