@@ -272,7 +272,6 @@ function BlogDetail() {
             <div className="grid-cols-1 ml-2">
               <span className="text-base">Specialized T Cells<br />Patrol Human<br />Cornea</span>
             </div>
-
           </div>
         </div>
         <div className="  h-24  w-64 rounded-2xl mb-4 bg-my-color">
@@ -285,7 +284,6 @@ function BlogDetail() {
             <div className="grid-cols-1 ml-2">
               <span className="text-base">Specialized T Cells<br />Patrol Human<br />Cornea</span>
             </div>
-
           </div>
         </div>
       </div>
