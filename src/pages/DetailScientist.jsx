@@ -2,7 +2,7 @@ import React from "react";
 
 const DetailScientist = () => {
   return (
-    <div className="w-[1240px] h-[546px] mt-[180px] ">
+    <div className="w-full h-[546px] mt-16">
       <div className="w-full h-full mt-16">
         <div className="flex justify-between">
           <div className="w-[204px] h-[390px] flex flex-col gap-[48px]">
