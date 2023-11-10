@@ -12,6 +12,7 @@ import Connect from "./components/Connect";
 import { Route, Routes, useLocation } from "react-router-dom";
 import DetailScientist from "./pages/DetailScientist";
 import DashboardScientist from "./pages/DashboardScientist";
+import SignUp from "./pages/signup";
 import "./index.css";
 
 const App = () => {
@@ -57,6 +58,7 @@ const App = () => {
               <Route path="/messages" element={<Messages />} />
               <Route path="/connect" element={<Connect />} />
               <Route path="/connect/donate" element={<Connect />} />
+              <Route path="/sign-up" element={<SignUp />} />
             </Routes>
           </div>
         </div>
