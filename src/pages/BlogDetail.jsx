@@ -276,6 +276,98 @@ function BlogDetail() {
                         </div>
                     </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex-1 pl-9">
+        <div className="grid-cols-1 whitespace-nowrap mb-4">
+          <p className=" font-medium">Specialized T Cells Patrol Human</p>
+          <p className="mb-1  font-medium">Cornea</p>
+          <span className=" font-thin text-sm opacity-50">USA MERA,PhD.
+            |  12/31/2022
+            |  5 min read
+          </span>
+          <hr className="decoration-my-color opacity-50 mt-2 w-60"></hr>
+        </div>
+        <div className="grid-cols-1 whitespace-nowrap mb-4">
+          <p className="  font-medium ">Specialized T Cells Patrol Human</p>
+          <p className="mb-1 font-medium">Cornea</p>
+          <span className=" font-thin text-sm opacity-50">USA MERA,PhD.
+            |  12/31/2022
+            |  5 min read
+          </span>
+          <hr className="decoration-my-color opacity-50 mt-2 w-60"></hr>
+        </div>
+        <div className="grid-cols-1 whitespace-nowrap mb-4">
+          <p className="  font-medium">Specialized T Cells Patrol Human</p>
+          <p className="mb-1 font-medium">Cornea</p>
+          <span className=" font-thin text-sm opacity-50">USA MERA,PhD.
+            |  12/31/2022
+            |  5 min read
+          </span>
+          <hr className="decoration-my-color opacity-50 mt-2 w-60"></hr>
+        </div>
+        <div className="flex ml-3 mb-11">
+          <div className="text-center h-8 w-8 mr-2  bg-white rounded-2xl">
+            <i className="fa-brands fa-vimeo mt-2 text-gray-900"></i>
+          </div>
+          <div className="text-center h-8 w-8 mr-2 bg-white rounded-2xl">
+            <i className="fa-brands fa-facebook-f mt-2 text-gray-900"></i>
+          </div>
+          <div className="text-center h-8 w-8 mr-2 bg-white  rounded-2xl">
+            <i className="fa-brands fa-instagram mt-2 text-gray-900"></i>
+          </div>
+          <div className="text-center h-8 w-8 mr-2 bg-white  rounded-2xl">
+            <i className="fa-brands fa-linkedin-in mt-2 text-gray-900"></i>
+          </div>
+          <div className="text-center h-8 w-8 mr-2 bg-white  rounded-2xl">
+            <i className="fa-brands fa-youtube mt-2 text-gray-900"></i>
+          </div>
+          <div className="text-center h-8 w-8 mr-2 bg-white  rounded-2xl">
+            <i className="fa-brands fa-twitter mt-2 text-gray-900"></i>
+          </div>
+        </div>
+        <div className=" mb-3.5">
+          <h2 className=" font-normal text-2xl underline cursor-pointer">Trending</h2>
+        </div>
+        <div className="  h-24 w-64 rounded-2xl mb-4 bg-my-color">
+          <div className="flex ">
+            <img
+              src="https://i.pinimg.com/originals/81/df/3f/81df3f704ba55281ead0042466b293fa.jpg"
+              alt="Description"
+              className="w-20 h-20 ml-2 my-2 rounded-xl shadow-lg"
+            />
+            <div className="grid-cols-1 ml-2">
+              <span className="text-base cursor-pointer">Specialized T Cells<br />Patrol Human<br />Cornea</span>
+            </div>
+
+          </div>
+        </div>
+        <div className="  h-24  w-64 rounded-2xl mb-4 bg-my-color">
+          <div className="flex">
+            <img
+              src="https://i.pinimg.com/originals/81/df/3f/81df3f704ba55281ead0042466b293fa.jpg"
+              alt="Description"
+              className="w-20 h-20 ml-2 my-2 rounded-xl shadow-lg"
+            />
+            <div className="grid-cols-1 ml-2">
+              <span className="text-base">Specialized T Cells<br />Patrol Human<br />Cornea</span>
+            </div>
+          </div>
+        </div>
+        <div className="  h-24  w-64 rounded-2xl mb-4 bg-my-color">
+          <div className="flex">
+            <img
+              src="https://i.pinimg.com/originals/81/df/3f/81df3f704ba55281ead0042466b293fa.jpg"
+              alt="Description"
+              className="w-20 h-20 ml-2 my-2 rounded-xl shadow-lg"
+            />
+            <div className="grid-cols-1 ml-2">
+              <span className="text-base">Specialized T Cells<br />Patrol Human<br />Cornea</span>
+            </div>
+          </div>
             </div>
         </div>
     )
