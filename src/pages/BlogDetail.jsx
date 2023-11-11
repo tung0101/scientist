@@ -23,7 +23,6 @@ function BlogDetail() {
                                 and typesetting industry. Lorem Ipsum
                             </span>
                         </div>
-
                         <div className="flex">
                             <img
                                 src="https://24hstore.vn/upload_images/images/2023/hinh-nen-may-tinh/1-1-hinh-nen-may-tinh-chill-win-10-1.jpg"
@@ -42,9 +41,7 @@ function BlogDetail() {
                                     </span>
                                 </div>
                             </div>
-
                         </div>
-
                         <div className="mb-3">
                             <span className="opacity-50  font-normal text-sm">
                                 Brain development is a carefully choreographed dance. Neurons develop specialized functions and, in small hops, move through the brain to get into the correct position. The chemical signals coursing through the resulting network allow animals to think, feel, and live.
@@ -52,7 +49,6 @@ function BlogDetail() {
                                 In a new <a href="/" className="underline font-bold text-text-blue decoration-text-text-blue-900 cursor-pointer">study</a>. published in Nature, <a href="/" className="underline font-bold text-text-blue decoration-text-text-blue-900  cursor-pointer">Sergiu Pașca,</a> a neuroscientist at Stanford University, and his team combined assembloid technology with CRISPR gene editing to determine the role of neurodevelopmental disease genes during typical brain development and the mayhem that ensues when they are missing.1
                             </span>
                         </div>
-
                         <div className="mb-3">
                             <span className="opacity-50  font-normal text-base">
                                 See also <a href="/" className="underline font-bold text-text-blue decoration-text-text-blue-900  cursor-pointer">“Sergiu Pasca Builds Brains to Study Developmental Disease”</a>
@@ -96,9 +92,7 @@ function BlogDetail() {
                                     </span>
                                 </div>
                             </div>
-
                         </div>
-
                         <div className="mb-3">
                             <span className="font-normal text-base opacity-50">
                                 See also “Sergiu Pasca Builds Brains to Study Developmental Disease”
@@ -111,7 +105,6 @@ function BlogDetail() {
                                 “My lab is known for developing tools, but that was never really the goal,” Pașca said. “My goal is to really try to understand the biology of severe psychiatric disorders.”
                             </span>
                         </div>
-
                         <div className="grid mb-3 justify-items-end">
                             <div className="flex">
                                 <div className="text-center h-8 w-8 mr-2  bg-white rounded-2xl">
@@ -134,7 +127,6 @@ function BlogDetail() {
                                 </div>
                             </div>
                         </div>
-
                         <div className="mb-3">
                             <h3 className=" font-medium text-sm">Keywords</h3>
                         </div>
@@ -167,7 +159,6 @@ function BlogDetail() {
                                     </span>
                                 </div>
                             </div>
-
                         </div>
                         <div className="mb-3 ml-2.5">
                             <h3 className=" font-medium text-sm">Meet the Author</h3>
@@ -259,7 +250,6 @@ function BlogDetail() {
                         <div className="grid-cols-1 ml-2">
                             <span className="text-base cursor-pointer">Specialized T Cells<br />Patrol Human<br />Cornea</span>
                         </div>
-
                     </div>
                 </div>
                 <div className="  h-24  w-64 rounded-2xl mb-4 bg-my-color">
@@ -272,7 +262,6 @@ function BlogDetail() {
                         <div className="grid-cols-1 ml-2">
                             <span className="text-base">Specialized T Cells<br />Patrol Human<br />Cornea</span>
                         </div>
-
                     </div>
                 </div>
                 <div className="  h-24  w-64 rounded-2xl mb-4 bg-my-color">
@@ -285,9 +274,100 @@ function BlogDetail() {
                         <div className="grid-cols-1 ml-2">
                             <span className="text-base">Specialized T Cells<br />Patrol Human<br />Cornea</span>
                         </div>
-
                     </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex-1 pl-9">
+        <div className="grid-cols-1 whitespace-nowrap mb-4">
+          <p className=" font-medium">Specialized T Cells Patrol Human</p>
+          <p className="mb-1  font-medium">Cornea</p>
+          <span className=" font-thin text-sm opacity-50">USA MERA,PhD.
+            |  12/31/2022
+            |  5 min read
+          </span>
+          <hr className="decoration-my-color opacity-50 mt-2 w-60"></hr>
+        </div>
+        <div className="grid-cols-1 whitespace-nowrap mb-4">
+          <p className="  font-medium ">Specialized T Cells Patrol Human</p>
+          <p className="mb-1 font-medium">Cornea</p>
+          <span className=" font-thin text-sm opacity-50">USA MERA,PhD.
+            |  12/31/2022
+            |  5 min read
+          </span>
+          <hr className="decoration-my-color opacity-50 mt-2 w-60"></hr>
+        </div>
+        <div className="grid-cols-1 whitespace-nowrap mb-4">
+          <p className="  font-medium">Specialized T Cells Patrol Human</p>
+          <p className="mb-1 font-medium">Cornea</p>
+          <span className=" font-thin text-sm opacity-50">USA MERA,PhD.
+            |  12/31/2022
+            |  5 min read
+          </span>
+          <hr className="decoration-my-color opacity-50 mt-2 w-60"></hr>
+        </div>
+        <div className="flex ml-3 mb-11">
+          <div className="text-center h-8 w-8 mr-2  bg-white rounded-2xl">
+            <i className="fa-brands fa-vimeo mt-2 text-gray-900"></i>
+          </div>
+          <div className="text-center h-8 w-8 mr-2 bg-white rounded-2xl">
+            <i className="fa-brands fa-facebook-f mt-2 text-gray-900"></i>
+          </div>
+          <div className="text-center h-8 w-8 mr-2 bg-white  rounded-2xl">
+            <i className="fa-brands fa-instagram mt-2 text-gray-900"></i>
+          </div>
+          <div className="text-center h-8 w-8 mr-2 bg-white  rounded-2xl">
+            <i className="fa-brands fa-linkedin-in mt-2 text-gray-900"></i>
+          </div>
+          <div className="text-center h-8 w-8 mr-2 bg-white  rounded-2xl">
+            <i className="fa-brands fa-youtube mt-2 text-gray-900"></i>
+          </div>
+          <div className="text-center h-8 w-8 mr-2 bg-white  rounded-2xl">
+            <i className="fa-brands fa-twitter mt-2 text-gray-900"></i>
+          </div>
+        </div>
+        <div className=" mb-3.5">
+          <h2 className=" font-normal text-2xl underline cursor-pointer">Trending</h2>
+        </div>
+        <div className="  h-24 w-64 rounded-2xl mb-4 bg-my-color">
+          <div className="flex ">
+            <img
+              src="https://i.pinimg.com/originals/81/df/3f/81df3f704ba55281ead0042466b293fa.jpg"
+              alt="Description"
+              className="w-20 h-20 ml-2 my-2 rounded-xl shadow-lg"
+            />
+            <div className="grid-cols-1 ml-2">
+              <span className="text-base cursor-pointer">Specialized T Cells<br />Patrol Human<br />Cornea</span>
+            </div>
+
+          </div>
+        </div>
+        <div className="  h-24  w-64 rounded-2xl mb-4 bg-my-color">
+          <div className="flex">
+            <img
+              src="https://i.pinimg.com/originals/81/df/3f/81df3f704ba55281ead0042466b293fa.jpg"
+              alt="Description"
+              className="w-20 h-20 ml-2 my-2 rounded-xl shadow-lg"
+            />
+            <div className="grid-cols-1 ml-2">
+              <span className="text-base">Specialized T Cells<br />Patrol Human<br />Cornea</span>
+            </div>
+          </div>
+        </div>
+        <div className="  h-24  w-64 rounded-2xl mb-4 bg-my-color">
+          <div className="flex">
+            <img
+              src="https://i.pinimg.com/originals/81/df/3f/81df3f704ba55281ead0042466b293fa.jpg"
+              alt="Description"
+              className="w-20 h-20 ml-2 my-2 rounded-xl shadow-lg"
+            />
+            <div className="grid-cols-1 ml-2">
+              <span className="text-base">Specialized T Cells<br />Patrol Human<br />Cornea</span>
+            </div>
+          </div>
             </div>
         </div>
     )

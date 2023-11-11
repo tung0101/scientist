@@ -174,20 +174,11 @@ function Scientists() {
                       </div>
                     </div>
 
-                    <p className="mt-2 overscroll-contain text-slate-500">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore Ut enim ad
-                      minim veniam, quis nostrud exercitation ullamco laboris
-                      nisi ut aliquip ex ea commodo con Duis aute irure dolor in
-                      reprehenderit in voluptate velit esse cillum dolore eu
-                      fugiat nulla pariatu
-                    </p>
-                    <a
-                      href="/"
-                      className="block mt-1 text-lg pb-3 leading-tight pt-5 font-medium text-slate-400 hover:underline"
-                    >
-                      Project participated:<b className="text-white pl-1">79</b>{" "}
-                    </a>
+
+                    <p className="mt-2 overscroll-contain text-slate-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu</p>
+                    <a href="/" className="block mt-1 text-lg pb-3 leading-tight pt-5 font-medium text-slate-400 hover:underline">Project participated:<b className="text-white pl-1">79</b> </a>
+                      
                   </div>
                 </div>
               </div>
