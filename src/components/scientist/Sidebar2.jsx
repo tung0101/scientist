@@ -1,21 +1,17 @@
 import { useState } from "react";
 import {
-  PiCaretDownBold,
-  PiHouseFill,
-  PiUsersBold,
   PiAtom,
-  PiHandshakeFill,
+  PiCaretLeftBold,
+  PiCirclesFour,
+  PiNewspaper,
+  PiUser,
+  PiWallet,
+  PiMoney,
+  PiPaintBrushBroad,
 } from "react-icons/pi";
-import { IoFileTrayOutline, IoSettingsOutline } from "react-icons/io5";
-import { BsInfoLg, BsCircleHalf } from "react-icons/bs";
+import { HiOutlineArrowCircleLeft } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-
-import Addcoin from "../assets/Addcoin";
-import Bitcoin from "../assets/Bitcoin";
-import Ethereum from "../assets/Ethereum";
-
-import logo from "../assets/logo.svg";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
@@ -25,32 +21,13 @@ const Sidebar = () => {
   const isMessagesPage = location.pathname.includes("messages");
 
   const Menus = [
-    { title: "Home", icon: <PiHouseFill />, router: "/" },
-    { title: "Scientist", icon: <PiUsersBold />, router: "/scientist" },
-    // { title: "Detail Scientist", icon: <PiUsersBold />, router: '/detailScientist' },
-    { title: "New Project", icon: <PiAtom />, router: "list-project" },
-    { title: "Joined", icon: <PiHandshakeFill />, router: "/joined" },
-    { title: "Inbox", icon: <IoFileTrayOutline />, router: "/messages" },
-    {
-      title: <PiCaretDownBold className={`${submenuOpen && "rotate-180 "}`} />,
-      titleAction: "COIN",
-      router: "/coin",
-      spacing: true,
-      submenu: true,
-      submenuItems: [
-        { title: "BSC", icon: <Bitcoin /> },
-        { title: "Ethereum", icon: <Ethereum /> },
-        { title: "Add new coin", icon: <Addcoin /> },
-      ],
-    },
-    {
-      title: "Settings",
-      spacing: true,
-      icon: <IoSettingsOutline />,
-      router: "/setting",
-    },
-    { title: "Help & FAQ", icon: <BsInfoLg />, router: "/help" },
-    { title: "Dark mode", icon: <BsCircleHalf />, router: "/dark" },
+    { title: "Dashboard", icon: <PiCirclesFour />, router: "/dashboard" },
+    { title: "Project", icon: <PiAtom />, router: "/project" },
+    { title: "Blog", icon: <PiNewspaper />, router: "/blog" },
+    { title: "Account", icon: <PiUser />, router: "/account" },
+    { title: "Wallet", icon: <PiWallet />, router: "/wallet" },
+    { title: "Withdraw Money", icon: <PiMoney />, router: "/withdraw-money" },
+    { title: "Themes", icon: <PiPaintBrushBroad />, router: "/themes" },
   ];
   return (
     <div
@@ -59,20 +36,15 @@ const Sidebar = () => {
       } bg-primary-500 text-white text-sm min-h-screen px-7 duration-300 overflow-x-scroll scrollbar-none scrollbar-thumb-zinc-600`}
     >
       <div className="inline-flex pt-7 items-center w-full h-fit bg-primary-500 sticky top-0 ">
-        <img
-          src={logo}
-          className={`rounded cursor-pointer block float-left duration-500 ${
-            !open && "rotate-180"
-          }`}
-          onClick={() => setOpen(!open)}
-          alt=""
-        />
+        <div>
+          <PiCaretLeftBold className="text-white text-lg w-[32px] h-[32px] relative left-3" />
+        </div>
         <h1
           className={`text-white origin-left font-semibold text-2xl pl-4 duration-300 ${
             open && "scale-0"
           } `}
         >
-          Auxpo
+          Setting
         </h1>
       </div>
       <ul className="pt-3 text-[#959799] w-full h-full overflow-hidden">
@@ -133,6 +105,14 @@ const Sidebar = () => {
           </div>
         ))}
       </ul>
+      <div>
+        <HiOutlineArrowCircleLeft
+          className={`text-[#aeb1b3] text-lg w-[32px] h-[32px] relative left-3 cursor-pointer ${
+            open ? "rotate-180 duration-500" : "rotate-0 duration-500"
+          }`}
+          onClick={() => setOpen(!open)}
+        />
+      </div>
     </div>
   );
 };

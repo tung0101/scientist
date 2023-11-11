@@ -30,6 +30,7 @@ import dashboardscientist5 from "./dashboardscientist_5.png";
 import dashboardscientist6 from "./dashboardscientist_6.png";
 import icons_5 from "./icons_5.png";
 import icons_6 from "./icons_6.png";
+import scientist from "./scientist.png";
 
 export {
   Vector,
@@ -64,4 +65,5 @@ export {
   dashboardscientist5,
   dashboardscientist6,
   icons_6,
+  scientist,
 };

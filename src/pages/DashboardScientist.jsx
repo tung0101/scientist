@@ -27,7 +27,7 @@ const Dashboard_Scientist = () => {
   });
 
   return (
-    <div className="text-white bg-black w-[1320px]">
+    <div className="text-white w-full">
       <div className="flex flex-row p-4">
         <div className="flex justify-between items-center p-4">
           <div className="bg-[#2f3338] w-[882px] h-[440.2px] rounded-[12px] p-[1px,1px,24px,1px]">

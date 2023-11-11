@@ -55,7 +55,7 @@ const ListProject = () => {
             </div>
             <div className="flex justify-between items-center p-4 mt-[-35px]">
               <p>0d : 19h : 59m : 25s</p>
-              <Link to="/listproject/detailproject">
+              <Link to="/list-project/detail-project">
                 <div className="flex justify-center items-center bg-[#6f49fd] w-[103px] h-[40px] rounded-[4px] hover:bg-[#6f4f9d] relative bottom-3 cursor-pointer">
                     <button>Detail</button>
                 </div>
