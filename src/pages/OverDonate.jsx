@@ -128,10 +128,11 @@ const OverDonate = () => {
               #01
             </h1>
             <hr className="w-[203px] border opacity-[40%] mb-[5px]" />
-
-            <h1 className="w-[153px] h-[33px] font-semibold text-[24px] text-[#bcbcbc] capitalize">
-              the scientist
-            </h1>
+            <Link to="/detail-scientist">
+              <h1 className="w-[153px] h-[33px] font-semibold text-[24px] text-[#bcbcbc] capitalize hover:text-white cursor-pointer">
+                the scientist
+              </h1>
+            </Link>
           </div>
           <div className="w-[203px] h-[86px] mb-[78px]">
             <h1
@@ -142,9 +143,11 @@ const OverDonate = () => {
               #02
             </h1>
             <hr className="w-[203px] border opacity-[40%] mb-[5px]" />
-            <h1 className="w-[170px] h-[33px] font-semibold text-[24px] text-[#bcbcbc] capitalize ">
-              califomia davis the project
-            </h1>
+            <Link to="/califomia">
+              <h1 className="w-[170px] h-[33px] font-semibold text-[24px] text-[#bcbcbc] capitalize hover:text-white cursor-pointer">
+                califomia davis the project
+              </h1>
+            </Link>
           </div>
           <div className="w-[203px] h-[86px] mb-[48px]">
             <h1
@@ -155,9 +158,11 @@ const OverDonate = () => {
               #03
             </h1>
             <hr className="w-[203px] border opacity-[40%] mb-[5px]" />
-            <h1 className="w-[153px] h-[33px] font-semibold text-[24px] text-[#bcbcbc] capitalize">
-              statistics
-            </h1>
+            <Link to="/statistics">
+              <h1 className="w-[153px] h-[33px] font-semibold text-[24px] text-[#bcbcbc] capitalize hover:text-white cursor-pointer">
+                statistics
+              </h1>
+            </Link>
           </div>
         </div>
 
