@@ -1,49 +1,53 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Califomia = () => {
   return (
     <div className="w-[1240px]">
-    <div className="flex justify-between">
-      <div className="w-[204px] h-[390px] flex flex-col gap-[48px]">
-        <div className="w-[203xp] h-[86px] gap-[8px]">
-          <h1 className="w-[60px] h-[45px] font-extrabold text-[32px]">
-            #01
-          </h1>
-          <hr className="w-[203px] border opacity-[40%] mb-[5px]" />
+      <div className="flex justify-between">
+        <div className="w-[204px] h-[390px] flex flex-col gap-[48px]">
+          <div className="w-[203xp] h-[86px] gap-[8px]">
+            <h1 className="w-[60px] h-[45px] font-extrabold text-[32px]">
+              #01
+            </h1>
+            <hr className="w-[203px] border opacity-[40%] mb-[5px]" />
+            <Link to="/detail-scientist">
+              <h1 className="w-[153px] h-[33px] font-semibold text-[24px] text-[#bcbcbc] capitalize hover:text-white">
+                the scientist
+              </h1>
+            </Link>
+          </div>
+          <div className="w-[203px] h-[86px] mb-[78px]">
+            <h1
+              className={
+                "w-[60px] h-[45px] text-[32px] font-extrabold text-white leading-[44px] mb-[5px]"
+              }
+            >
+              #02
+            </h1>
+            <hr className="w-[203px] border opacity-[40%] mb-[5px]" />
+            <h1 className="w-[170px] h-[33px] font-semibold text-[24px] text-[#bcbcbc] capitalize ">
+              califomia davis the project
+            </h1>
+          </div>
+          <div className="w-[203px] h-[86px] mb-[48px]">
+            <h1
+              className={
+                "w-[60px] h-[45px] text-[32px] font-extrabold text-white leading-[44px] mb-[5px]"
+              }
+            >
+              #03
+            </h1>
+            <hr className="w-[203px] border opacity-[40%] mb-[5px]" />
+            <Link to="/statistics">
+              <h1 className="w-[153px] h-[33px] font-semibold text-[24px] text-[#bcbcbc] capitalize hover:text-white">
+                statistics
+              </h1>
+            </Link>
+          </div>
+        </div>
 
-          <h1 className="w-[153px] h-[33px] font-semibold text-[24px] text-[#bcbcbc] capitalize">
-            the scientist
-          </h1>
-        </div>
-        <div className="w-[203px] h-[86px] mb-[78px]">
-          <h1
-            className={
-              "w-[60px] h-[45px] text-[32px] font-extrabold text-white leading-[44px] mb-[5px]"
-            }
-          >
-            #02
-          </h1>
-          <hr className="w-[203px] border opacity-[40%] mb-[5px]" />
-          <h1 className="w-[170px] h-[33px] font-semibold text-[24px] text-[#bcbcbc] capitalize ">
-            califomia davis the project
-          </h1>
-        </div>
-        <div className="w-[203px] h-[86px] mb-[48px]">
-          <h1
-            className={
-              "w-[60px] h-[45px] text-[32px] font-extrabold text-white leading-[44px] mb-[5px]"
-            }
-          >
-            #03
-          </h1>
-          <hr className="w-[203px] border opacity-[40%] mb-[5px]" />
-          <h1 className="w-[153px] h-[33px] font-semibold text-[24px] text-[#bcbcbc] capitalize">
-            statistics
-          </h1>
-        </div>
-      </div>
-      
-      <div className="flex-2 w-[894px] h-[489px]">
+        <div className="flex-2 w-[894px] h-[489px]">
           {/* title */}
           <h1 className="w-[100%] h-[45px] font-semibold text-[32px] capitalize text-white mb-[20px]">
             califomia davis's <span className="text-[#bcbcbc]">project</span>
@@ -57,7 +61,8 @@ const Califomia = () => {
               <div className="w-[214px] h-[168px] p-[12px]">
                 <img
                   src="https://images.pexels.com/photos/5490803/pexels-photo-5490803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  className="w-[214px] h-[168px] object-cover "
+                  className="w-[214px] h-[168px] object-cover"
+                  alt=""
                 />
               </div>
 
@@ -78,6 +83,7 @@ const Califomia = () => {
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/1257px-Ethereum_logo_2014.svg.png"
                         className="w-[24px] h-[24px]"
+                        alt=""
                       />
                       <span className="w-[70px] h-[18px] font-medium text-[15px] text-white opacity-[80%] capitalize">
                         ethereum
@@ -126,6 +132,7 @@ const Califomia = () => {
                 <img
                   src="https://images.pexels.com/photos/5490803/pexels-photo-5490803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   className="w-[214px] h-[168px] object-cover "
+                  alt=""
                 />
               </div>
 
@@ -146,6 +153,7 @@ const Califomia = () => {
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/1257px-Ethereum_logo_2014.svg.png"
                         className="w-[24px] h-[24px]"
+                        alt=""
                       />
                       <span className="w-[70px] h-[18px] font-medium text-[15px] text-white opacity-[80%] capitalize">
                         ethereum
@@ -187,14 +195,11 @@ const Califomia = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
-
-     
+      </div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default Califomia
+export default Califomia;

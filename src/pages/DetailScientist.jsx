@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const DetailScientist = () => {
   return (
@@ -25,9 +26,11 @@ const DetailScientist = () => {
                 #02
               </h1>
               <hr className="w-[203px] border opacity-[40%] mb-[5px]" />
-              <h1 className="w-[170px] h-[33px] font-semibold text-[24px] text-[#bcbcbc] capitalize ">
-                califomia davis the project
-              </h1>
+              <Link to="/califomia">
+                <h1 className="w-[170px] h-[33px] font-semibold text-[24px] text-[#bcbcbc] capitalize hover:text-white">
+                  califomia davis the project
+                </h1>
+              </Link>
             </div>
             <div className="w-[203px] h-[86px] mb-[48px]">
               <h1
@@ -38,9 +41,11 @@ const DetailScientist = () => {
                 #03
               </h1>
               <hr className="w-[203px] border opacity-[40%] mb-[5px]" />
-              <h1 className="w-[153px] h-[33px] font-semibold text-[24px] text-[#bcbcbc] capitalize">
-                statistics
-              </h1>
+              <Link to="/statistics">
+                <h1 className="w-[153px] h-[33px] font-semibold text-[24px] text-[#bcbcbc] capitalize hover:text-white">
+                  statistics
+                </h1>
+              </Link>
             </div>
           </div>
           <div className="text-white">
@@ -81,8 +86,8 @@ const DetailScientist = () => {
               <p className=" w-[487px] h-[152px] mt-[5px] opacity-[40%] text-white font-normal text-[16px] ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
                 veniam, libero, rerum recusandae nemo vero cum suscipit laborum
-                dolorem repellat magni repellendus qui sint itaque veritatis! Sunt
-                qui laboriosam velit!
+                dolorem repellat magni repellendus qui sint itaque veritatis!
+                Sunt qui laboriosam velit!
               </p>
             </div>
           </div>

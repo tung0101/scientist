@@ -74,7 +74,7 @@ function Scientists() {
                       </button>
                     </Link>
                   </div>
-                  <Link to="/detailscientist">
+                  <Link to="/detail-scientist">
                     <button className="bg-[#6F49FD] hover:bg-indigo-600 text-white-700 font-semibold hover:text-white  border border-indigo-600 hover:border-transparent w-32 py-2 px-4 rounded">
                       View more
                     </button>

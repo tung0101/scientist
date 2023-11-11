@@ -12,111 +12,112 @@ import {
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
+import { Link } from "react-router-dom";
 
 const Statistics = () => {
-    const series = [
-        {
-          name: "Series ",
-          data: [{ value: 100 }],
-        },
-        {
-          name: "Series 1",
-          data: [
-            { category: "Day 1", value: 20 },
-            { category: "Day 2", value: 20 },
-          ],
-        },
-        {
-          name: "Series 2",
-          data: [
-            { category: "Day 3", value: 20 },
-            { category: "Day 3", value: 40 },
-          ],
-        },
-        {
-          name: "Series 3",
-          data: [
-            { category: "Day 4", value: 40 },
-            { category: "Day 5", value: 40 },
-          ],
-        },
-        {
-          name: "Series 4",
-          data: [
-            { category: "Day 5", value: 10 },
-            { category: "Day 6", value: 10 },
-          ],
-        },
-    
-        {
-          name: "Series 5",
-          data: [
-            { category: "Day 7", value: 10 },
-            { category: "Day 8", value: 10 },
-          ],
-        },
-    
-        {
-          name: "Series 6",
-          data: [
-            { category: "Day 8", value: 40 },
-            { category: "Day 9", value: 40 },
-          ],
-        },
-    
-        {
-          name: "Series 6",
-          data: [
-            { category: "Day 9", value: 40 },
-            { category: "Day 10", value: 40 },
-          ],
-        },
-    
-        {
-          name: "Series 7",
-          data: [
-            { category: "Day 10", value: 80 },
-            { category: "Day 11", value: 80 },
-          ],
-        },
-    
-        {
-          name: "Series 8",
-          data: [
-            { category: "Day 12", value: 80 },
-            { category: "Day 13", value: 80 },
-          ],
-        },
-      ];
-    
-      const verticalLine = [
+  const series = [
+    {
+      name: "Series ",
+      data: [{ value: 100 }],
+    },
+    {
+      name: "Series 1",
+      data: [
         { category: "Day 1", value: 20 },
         { category: "Day 2", value: 20 },
+      ],
+    },
+    {
+      name: "Series 2",
+      data: [
         { category: "Day 3", value: 20 },
         { category: "Day 3", value: 40 },
+      ],
+    },
+    {
+      name: "Series 3",
+      data: [
         { category: "Day 4", value: 40 },
         { category: "Day 5", value: 40 },
+      ],
+    },
+    {
+      name: "Series 4",
+      data: [
         { category: "Day 5", value: 10 },
         { category: "Day 6", value: 10 },
+      ],
+    },
+
+    {
+      name: "Series 5",
+      data: [
         { category: "Day 7", value: 10 },
         { category: "Day 8", value: 10 },
+      ],
+    },
+
+    {
+      name: "Series 6",
+      data: [
         { category: "Day 8", value: 40 },
         { category: "Day 9", value: 40 },
+      ],
+    },
+
+    {
+      name: "Series 6",
+      data: [
+        { category: "Day 9", value: 40 },
         { category: "Day 10", value: 40 },
+      ],
+    },
+
+    {
+      name: "Series 7",
+      data: [
         { category: "Day 10", value: 80 },
         { category: "Day 11", value: 80 },
+      ],
+    },
+
+    {
+      name: "Series 8",
+      data: [
         { category: "Day 12", value: 80 },
         { category: "Day 13", value: 80 },
-      ];
-    
-      const updatedSeries = [
-        // ...series,
-        {
-          name: "Amount Donated",
-          data: verticalLine,
-        },
-      ];
-    
+      ],
+    },
+  ];
+
+  const verticalLine = [
+    { category: "Day 1", value: 20 },
+    { category: "Day 2", value: 20 },
+    { category: "Day 3", value: 20 },
+    { category: "Day 3", value: 40 },
+    { category: "Day 4", value: 40 },
+    { category: "Day 5", value: 40 },
+    { category: "Day 5", value: 10 },
+    { category: "Day 6", value: 10 },
+    { category: "Day 7", value: 10 },
+    { category: "Day 8", value: 10 },
+    { category: "Day 8", value: 40 },
+    { category: "Day 9", value: 40 },
+    { category: "Day 10", value: 40 },
+    { category: "Day 10", value: 80 },
+    { category: "Day 11", value: 80 },
+    { category: "Day 12", value: 80 },
+    { category: "Day 13", value: 80 },
+  ];
+
+  const updatedSeries = [
+    // ...series,
+    {
+      name: "Amount Donated",
+      data: verticalLine,
+    },
+  ];
+
   return (
     <div className="w-fit mt-[80px] ">
       <div className="flex justify-between">
@@ -126,10 +127,11 @@ const Statistics = () => {
               #01
             </h1>
             <hr className="w-[203px] border opacity-[40%] mb-[5px]" />
-
-            <h1 className="w-[153px] h-[33px] font-semibold text-[24px] text-[#bcbcbc] capitalize">
-              the scientist
-            </h1>
+            <Link to="/detail-scientist">
+              <h1 className="w-[153px] h-[33px] font-semibold text-[24px] text-[#bcbcbc] capitalize hover:text-white">
+                the scientist
+              </h1>
+            </Link>
           </div>
           <div className="w-[203px] h-[86px] mb-[78px]">
             <h1
@@ -140,9 +142,11 @@ const Statistics = () => {
               #02
             </h1>
             <hr className="w-[203px] border opacity-[40%] mb-[5px]" />
-            <h1 className="w-[170px] h-[33px] font-semibold text-[24px] text-[#bcbcbc] capitalize ">
-              califomia davis the project
-            </h1>
+            <Link to="/califomia">
+              <h1 className="w-[170px] h-[33px] font-semibold text-[24px] text-[#bcbcbc] capitalize hover:text-white">
+                califomia davis the project
+              </h1>
+            </Link>
           </div>
           <div className="w-[203px] h-[86px] mb-[48px]">
             <h1
@@ -159,8 +163,8 @@ const Statistics = () => {
           </div>
         </div>
 
-         {/* right */}
-         <div className="w-[974px] h-[416px] pr-[40px]">
+        {/* right */}
+        <div className="w-[974px] h-[416px] pr-[40px]">
           <div className="h-[45px] flex justify-around flex-col">
             <div className="flex justify-around">
               <h1 className="text-white font-semibold text-[32px]">
@@ -236,7 +240,6 @@ const Statistics = () => {
             </ResponsiveContainer>
           </div>
         </div>
-
       </div>
     </div>
   );
