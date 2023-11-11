@@ -4,7 +4,7 @@ function SignUp() {
   return (
     <div class=" bg-grey-lighter min-h-screen flex flex-col ">
       <div class="container max-w-4xl mx-auto flex-1 flex flex-col items-center justify-center px-2 ">
-        <h1 class="text-3xl text-center pb-8 pt-6">Scientist Sign Up</h1>
+        <h1 class="text-3xl text-center pb-8">Scientist Sign Up</h1>
         {/* Form Photo - Name, Email*/}
         <div class="bg-[#2F3338] px-6 py-8 shadow-md text-black w-full">
           <div class=" flex ">
