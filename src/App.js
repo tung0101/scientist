@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import Sidebar from "./components/sidebar";
+import Navbar from "./components/navbar";
+// import Sidebar from "./components/scientist/Sidebar2";
+// import Navbar from "./components/scientist/Navbar2";
 import BlogDetail from "./pages/BlogDetail";
 import Home from "./pages/Home";
-import Navbar from "./components/navbar";
 import ListProject from "./pages/ListProject";
 import DetailProject from "./pages/DetailProject";
 import Scientists from "./pages/Scientists";
@@ -13,6 +15,8 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import DetailScientist from "./pages/DetailScientist";
 import DashboardScientist from "./pages/DashboardScientist";
 import SignUp from "./pages/signup";
+import SettingAccount from "./pages/SettingAccount";
+
 import "./index.css";
 
 const App = () => {
@@ -59,6 +63,7 @@ const App = () => {
               <Route path="/connect" element={<Connect />} />
               <Route path="/connect/donate" element={<Connect />} />
               <Route path="/sign-up" element={<SignUp />} />
+              <Route path="/settingaccount" element={<SettingAccount />} />
             </Routes>
           </div>
         </div>
