@@ -18,6 +18,9 @@ import SignUp from "./pages/signup";
 import SettingAccount from "./pages/SettingAccount";
 
 import "./index.css";
+import OverDonate from "./pages/OverDonate";
+import Statistics from "./pages/Statistics";
+import Califomia from "./pages/Califomia";
 
 const App = () => {
   const location = useLocation();
@@ -64,6 +67,9 @@ const App = () => {
               <Route path="/connect/donate" element={<Connect />} />
               <Route path="/sign-up" element={<SignUp />} />
               <Route path="/settingaccount" element={<SettingAccount />} />
+              <Route path="/over-donate" element={<OverDonate />} />
+              <Route path="/statistics" element={<Statistics />} />
+              <Route path="/califomia" element={<Califomia />} />
             </Routes>
           </div>
         </div>
