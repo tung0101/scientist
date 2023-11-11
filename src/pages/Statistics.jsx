@@ -172,7 +172,10 @@ const Statistics = () => {
               </h1>
               <div className="bg-white h-[40px] pt-[10px] pr-[16px] pb-[10px] pl-[16px] rounded-[12px] ">
                 <div className="flex items-center justify-center gap-[8px] leading-[18px]  ">
-                  <FontAwesomeIcon icon={faCircleCheck} />
+                  <FontAwesomeIcon
+                    icon={faCircleCheck}
+                    className="text-black"
+                  />
                   <p className="text-black">The project</p>
                 </div>
               </div>
@@ -197,13 +200,14 @@ const Statistics = () => {
               </div>
 
               {/* top */}
-
-              <div className="bg-[#24272A] h-[40px] pt-[10px] pr-[16px] pb-[10px] pl-[16px] rounded-[8px] ">
-                <div className="flex items-center justify-center gap-[8px] leading-[18px]  ">
-                  <p>Donate</p>
-                  <FontAwesomeIcon icon={faCircleCheck} />
+              <Link to="/over-donate">
+                <div className="bg-[#24272A] h-[40px] pt-[10px] pr-[16px] pb-[10px] pl-[16px] rounded-[8px] cursor-pointer hover:bg-[#595e63]">
+                  <div className="flex items-center justify-center gap-[8px] leading-[18px]">
+                    <p>Progress</p>
+                    <FontAwesomeIcon icon={faCircleCheck} />
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
 

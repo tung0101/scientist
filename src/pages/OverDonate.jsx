@@ -2,16 +2,16 @@ import React from "react";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-    XAxis,
-    YAxis,
-    CartesianGrid,
-    Tooltip,
-    Legend,
-    ResponsiveContainer,
-    LineChart,
-    Line,
-  } from "recharts";
-
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+  LineChart,
+  Line,
+} from "recharts";
+import { Link } from "react-router-dom";
 
 const OverDonate = () => {
   const series = [
@@ -161,8 +161,8 @@ const OverDonate = () => {
           </div>
         </div>
 
-         {/* right */}
-         <div className="w-[974px] h-[416px] pr-[40px]">
+        {/* right */}
+        <div className="w-[974px] h-[416px] pr-[40px]">
           <div className="h-[45px] flex justify-around flex-col">
             <div className="flex justify-around">
               <h1 className="text-white font-semibold text-[32px] uppercase">
@@ -170,7 +170,10 @@ const OverDonate = () => {
               </h1>
               <div className="bg-white h-[40px] pt-[10px] pr-[16px] pb-[10px] pl-[16px] rounded-[12px] ">
                 <div className="flex justify-center items-center gap-[8px] leading-[18px]  ">
-                <FontAwesomeIcon icon={faCircleCheck} />
+                  <FontAwesomeIcon
+                    icon={faCircleCheck}
+                    className="text-black"
+                  />
                   <p className="text-[black]">The project</p>
                 </div>
               </div>
@@ -191,19 +194,20 @@ const OverDonate = () => {
 
               {/* top */}
 
-              <div className="bg-[#24272A] h-[40px] pt-[10px] pr-[16px] pb-[10px] pl-[16px] rounded-[8px] ">
-                <div className="flex gap-[8px] leading-[18px]  ">
-                  <p>Progress</p>
-
-                  <FontAwesomeIcon icon={faCircleCheck} />
+              <Link to="/statistics">
+                <div className="bg-[#24272A] h-[40px] pt-[10px] pr-[16px] pb-[10px] pl-[16px] rounded-[8px] cursor-pointer hover:bg-[#595e63]">
+                  <div className="flex items-center justify-center gap-[8px] leading-[18px]">
+                    <p>Donate</p>
+                    <FontAwesomeIcon icon={faCircleCheck} />
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
 
           {/* Chart */}
           <div className=" ml-[80px] text-white grid grid-cols-1 gap-5 mt-[100px] h-[300px] ">
-            <ResponsiveContainer width="100%" height="100%" >
+            <ResponsiveContainer width="100%" height="100%">
               <LineChart className="text-white" width={500} height={300}>
                 <CartesianGrid strokeDasharray="0 0" opacity="0.5" />
                 <XAxis
@@ -235,7 +239,6 @@ const OverDonate = () => {
             </ResponsiveContainer>
           </div>
         </div>
-
       </div>
     </div>
   );

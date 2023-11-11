@@ -31,11 +31,20 @@ const SettingAccount = () => {
                         Drag and drop image here, or click add image
                       </p>
 
-                      <button className="w-[101px] h-[40px] rounded-[8px] gap-[8px] bg-[#dedefa] relative top-5">
-                        <p className="[font-family:'Inter-Medium',Helvetica] font-medium text-[#5b58e7] text-[14px] tracking-[0.07px] leading-[20px] whitespace-nowrap">
+                      <label
+                        htmlFor="file-upload"
+                        className="py-3 px-4 relative top-[17px] cursor-pointer rounded-md bg-[#dedefa] focus-within:outline-none  focus-within:ring-offset-2 hover:text-indigo-500"
+                      >
+                        <span className="[font-family:'Inter-Medium',Helvetica] font-medium text-[#5b58e7] text-[14px] tracking-[0.07px] leading-[20px] whitespace-nowrap">
                           Add Image
-                        </p>
-                      </button>
+                        </span>
+                        <input
+                          id="file-upload"
+                          name="file-upload"
+                          type="file"
+                          className="sr-only"
+                        />
+                      </label>
                     </div>
                   </div>
                 </div>
