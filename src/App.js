@@ -6,6 +6,9 @@ import ListProject from "./pages/ListProject";
 import DetailProject from "./pages/DetailProject";
 import Scientists from "./pages/Scientists"
 import Joined from "./pages/Joined";
+import SettingWallet from "./pages/Setting/Settingwallet";
+import SettingWithdrawMoney from "./pages/Setting/SettingWithdrawMoney";
+import SettingTheme from "./pages/Setting/SettingTheme";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import DashboardScientist from "./pages/DashboardScientist";
 import './index.css'
@@ -34,6 +37,11 @@ const App = () => {
                 <Route path="/joined" element={<Joined />} />
                 <Route path="/blogDetail" element={<BlogDetail />} />
                 <Route path="/listproject/detailproject" element={<DetailProject />} />
+                 {/* router mấy trang tui mới tạo để up lên git */}
+                <Route path="/settingwalet" element={<SettingWallet />} />
+                <Route path="/settingwithdrawmoney" element={<SettingWithdrawMoney />} />
+                <Route path="/settingthem" element={<SettingTheme />} />
+                  {/* router mấy trang tui mới tạo để up lên git */}       
               </Routes>
             </div>
           </div>
